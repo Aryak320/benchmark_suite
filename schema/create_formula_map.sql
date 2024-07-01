@@ -1,0 +1,3 @@
+CREATE TABLE formula_map AS SELECT * FROM part_formula_mapping UNION SELECT * FROM supplier_formula_mapping UNION SELECT * FROM partsupp_formula_mapping UNION SELECT * FROM customer_formula_mapping UNION SELECT * FROM orders_formula_mapping UNION SELECT * FROM lineitem_formula_mapping UNION SELECT * FROM nation_formula_mapping UNION SELECT * FROM region_formula_mapping;
+
+ALTER TABLE formula_map ADD PRIMARY KEY (provenance);
