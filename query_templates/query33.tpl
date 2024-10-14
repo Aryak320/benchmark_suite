@@ -1,8 +1,8 @@
--- Query4: Retrieve customers who have placed orders with a total price greater than a certain value
-DEFINE TOTALPRICE = RANDOM(10000,100000,uniform);
+define PRICE=RANDOM(10000,100000,uniform);
 PROVENANCE OF(
-SELECT c.*
+SELECT DISTINCT c.c_name, c.c_nationkey
 FROM customer c, orders o
 WHERE c.c_custkey = o.o_custkey
-AND o.o_totalprice > [TOTALPRICE] );
+AND o.o_totalprice > [PRICE]
+GROUP BY c.c_nationkey,c.c_name );
 

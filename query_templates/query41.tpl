@@ -1,12 +1,12 @@
--- Query12: Retrieve customers and their orders for a given nation and total price range
-DEFINE NATIONKEY = RANDOM(0,24,uniform);
-DEFINE TOTALPRICE_MIN = RANDOM(10000,100000,uniform);
-DEFINE TOTALPRICE_MAX = RANDOM([TOTALPRICE_MIN],200000,uniform);
+define NATION = RANDOM(0,24,uniform);
+define P_MIN = RANDOM(10000,100000,uniform);
+define P_MAX = RANDOM([P_MIN],200000,uniform);
 PROVENANCE OF (
-SELECT c.*, o.*
+SELECT c.c_name, o.o_orderstatus, c.c_nationkey, c.c_phone
 FROM customer c, orders o
 WHERE c.c_custkey = o.o_custkey
-AND c.c_nationkey = [NATIONKEY]
-AND o.o_totalprice >= [TOTALPRICE_MIN]
-AND o.o_totalprice <= [TOTALPRICE_MAX]);
+AND c.c_nationkey = [NATION]
+AND o.o_totalprice >= [P_MIN]
+AND o.o_totalprice <= [P_MAX]
+);
 

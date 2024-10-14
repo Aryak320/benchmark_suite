@@ -1,11 +1,10 @@
--- Query10: Retrieve suppliers who are from a certain region and have an account balance less than a certain value
-DEFINE REGIONKEY = RANDOM(0,4,uniform);
-DEFINE ACCTBAL = RANDOM(1,10000,uniform);
+define REGION=RANDOM(0,4,uniform);
+define BAL=RANDOM(1,10000,uniform);
 PROVENANCE OF (
 SELECT s.*
-FROM supplier s, nation n, region r
-WHERE s.s_nationkey = n.n_nationkey
-AND n.n_regionkey = r.r_regionkey
-AND r.r_regionkey = [REGIONKEY]
-AND s.s_acctbal < [ACCTBAL] );
+FROM supplier s 
+INNER JOIN nation n ON  s.s_nationkey = n.n_nationkey 
+INNER JOIN region r ON  n.n_regionkey = r.r_regionkey
+WHERE r.r_regionkey = [REGION]
+AND s.s_acctbal < [BAL]);
 
