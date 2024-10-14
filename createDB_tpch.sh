@@ -51,7 +51,6 @@ do
 done
 
 PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASES[0]} -h $HOST <prov_temp.sql
-
 rm prov_temp.sql
 touch prov_tem.sql
 for tbl in part supplier partsupp customer orders lineitem nation region

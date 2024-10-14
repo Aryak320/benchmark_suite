@@ -196,6 +196,16 @@ BEGIN
 END
 $$;
 
+CREATE OR REPLACE FUNCTION public.whyPROV_now_delta(state text[]) RETURNS text[]
+ LANGUAGE plpgsql IMMUTABLE
+    AS $$
+BEGIN
+  IF state IS NULL OR array_length(state,1)=0 THEN RETURN '{}'::text[]; --el 0 of semiring
+  ELSE RETURN '{"{}"}'::text[]; --el 1 of semiring
+  END IF;
+END
+
+$$;
 
 
 CREATE OR REPLACE AGGREGATE public.whyPROV_now_plus(text[]) (
@@ -225,7 +235,7 @@ BEGIN
     'whyPROV_now_plus',
     'whyPROV_now_times',
     'fmonus',
-    NULL);
+    'whyPROV_now_delta');
 END
 $$;
 

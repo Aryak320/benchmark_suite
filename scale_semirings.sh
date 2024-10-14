@@ -121,7 +121,7 @@ for DATABASE in ${DATABASES[@]}
 
 
     find /var/lib/postgresql/16/main/ -type f -name "*.mmap" -exec rm -f {} +
-    PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d postgres -c 'DROP DATABASE '${DATABASE}
+    #PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d postgres -c 'DROP DATABASE '${DATABASE}
     service postgresql restart
     done
 
