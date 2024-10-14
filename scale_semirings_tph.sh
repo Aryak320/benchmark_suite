@@ -11,9 +11,9 @@ sf=1
 QUERIES=( "6_tpch_why.sql" "7_tpch_why.sql"  )
 
 
-DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
-INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates.lst"
-OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
+DIRECTORY="query_templates/"
+INPUT="query_templates/templates.lst"
+OUTPUT_DIR="query_templates"
 
 
 CSV="scale_semirings_tpch.csv"
@@ -22,14 +22,14 @@ echo "scale_factor,query,formula(s),counting(s),why(s)" > $CSV
 
 for DATABASE in ${DATABASES[@]}
     do
-     
-     echo "Creating database $DATABASE "  
-     
+
+     echo "Creating database $DATABASE "
+
      PGPASSWORD=$PASSWORD createdb $DATABASE -U $USER -h $HOST
      PGPASSWORD=$PASSWORD psql -U $USER -d $DATABASE -h $HOST -f dss.ddl
      ./dbgen -vf -s $sf
-     
-     for i in `ls *.tbl`; 
+
+     for i in `ls *.tbl`;
       do
        table=${i/.tbl/}
        echo "Loading $table..."
@@ -66,13 +66,13 @@ for DATABASE in ${DATABASES[@]}
         do
          sed "s/(_TBL)/${tbl}/g" schema/whyprov.sql >>prov_temp.sql
        done
-     
+
      PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASE} -h $HOST <prov_temp.sql
 
     #PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASE} -h $HOST <schema/create_formula_map.sql
     #PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASE} -h $HOST <schema/create_counting_map.sql
     PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASE} -h $HOST <schema/create_why_map.sql
-    
+
     for QUERY in ${QUERIES[@]}
      do
           START=$(date +%s.%N)
@@ -84,14 +84,5 @@ for DATABASE in ${DATABASES[@]}
 
     find /var/lib/postgresql/16/main/ -type f -name "*.mmap" -exec rm -f {} +
     service postgresql restart
-  
-  done  
 
-
-
-
-    
-
-
-
-
+  done
