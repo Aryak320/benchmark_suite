@@ -1,3 +1,1 @@
 scale_factor,query,formula(s),counting(s),why(s)
-tpc_scale_0_1,6_tpch_why.sql,.875776556
-tpc_scale_0_1,7_tpch_why.sql,36.759842473
