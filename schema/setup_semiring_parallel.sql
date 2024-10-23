@@ -55,7 +55,7 @@ CREATE FUNCTION public.formula_delta(formula text) RETURNS text
     LANGUAGE plpgsql IMMUTABLE PARALLEL SAFE
     AS $$
 BEGIN    
-  SELECT concat('δ(',formula,')');
+  RETURN(SELECT concat('δ(',formula,')'));
 END
 $$;
 
