@@ -1,32 +1,40 @@
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('part_why_map','part','provenance');
+alter table part add column probability double precision;
+update part set probability=0.5;
 
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('supplier_why_map','supplier','provenance');
 
-SET search_path TO public,provsql;
+alter table supplier add column probability double precision;
+update supplier set probability=0.5;
 
-SELECT create_provenance_mapping('partsupp_why_map','partsupp','provenance');
 
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('customer_why_map','customer','provenance');
+alter table partsupp add column probability double precision;
+update partsupp set probability=0.5;
 
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('orders_why_map','orders','provenance');
 
-SET search_path TO public,provsql;
+alter table customer add column probability double precision;
+update customer set probability=0.5;
 
-SELECT create_provenance_mapping('lineitem_why_map','lineitem','provenance');
 
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('nation_why_map','nation','provenance');
+alter table orders add column probability double precision;
+update orders set probability=0.5;
 
-SET search_path TO public,provsql;
 
-SELECT create_provenance_mapping('region_why_map','region','provenance');
+
+alter table lineitem add column probability double precision;
+update lineitem set probability=0.5;
+
+
+
+alter table nation add column probability double precision;
+update nation set probability=0.5;
+
+
+
+alter table region add column probability double precision;
+update region set probability=0.5;
+
 

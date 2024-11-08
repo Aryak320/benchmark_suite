@@ -4,7 +4,7 @@ PASSWORD="1234"
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
 sf=1
-QUERIES=("3_tpch.sql" "6_tpch.sql" "7_tpch.sql" "9_tpch.sql" "10_tpch.sql" "12_tpch.sql" "14_tpch.sql" "19_tpch.sql" )
+QUERIES=("6_tpch.sql" "3_tpch.sql"  "7_tpch.sql" "9_tpch.sql" "10_tpch.sql" "12_tpch.sql" "14_tpch.sql" "19_tpch.sql" )
 
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
 OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
@@ -91,19 +91,19 @@ for DATABASE in ${DATABASES[@]}
      do
           echo "running $QUERY "
           START=$(date +%s.%N)
-          PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_formula.sql" -o $DIRECTORY"${QUERY%.*}_formula_output.txt"
+          timeout 1500 env PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_formula.sql" -o $DIRECTORY"${QUERY%.*}_formula_output.txt"
           END=$(date +%s.%N)
           TIMES_f=$(echo "$END - $START" | bc)
           service postgresql restart
 
           START=$(date +%s.%N)
-          PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_counting.sql" -o $DIRECTORY"${QUERY%.*}_counting_output.txt"
+          timeout 1500 env PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_counting.sql" -o $DIRECTORY"${QUERY%.*}_counting_output.txt"
           END=$(date +%s.%N)
           TIMES_c=$(echo "$END - $START" | bc)
           service postgresql restart
 
           START=$(date +%s.%N)
-          PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_why.sql" -o $DIRECTORY"${QUERY%.*}_why_output.txt"
+          timeout 1500  env PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY%.*}_why.sql" -o $DIRECTORY"${QUERY%.*}_why_output.txt"
           END=$(date +%s.%N)
           TIMES_w=$(echo "$END - $START" | bc)
           service postgresql restart

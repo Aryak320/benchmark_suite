@@ -52,9 +52,9 @@ END
 $$;
 
 CREATE FUNCTION public.formula_delta(formula text) RETURNS text
-    LANGUAGE plpgsql IMMUTABLE PARALLEL SAFE
+    LANGUAGE plpgsql IMMUTABLE STRICT PARALLEL SAFE
     AS $$
-BEGIN    
+   BEGIN
   RETURN(SELECT concat('δ(',formula,')'));
 END
 $$;
@@ -197,7 +197,7 @@ END
 $$;
 
 CREATE OR REPLACE FUNCTION public.whyPROV_now_delta(state text[]) RETURNS text[]
- LANGUAGE plpgsql IMMUTABLE
+ LANGUAGE plpgsql IMMUTABLE PARALLEL SAFE
     AS $$
 BEGIN
   IF state IS NULL OR array_length(state,1)=0 THEN RETURN '{}'::text[]; --el 0 of semiring
