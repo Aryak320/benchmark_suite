@@ -4,10 +4,10 @@
 USER="maybms"
 PASSWORD="maybms"
 PORT="5433"
-DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+DATABASES=("tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
 QUERIES=("tpch_1_m.sql" "tpch_4_m.sql" "tpch_12_m.sql"  "tpch_15_m.sql")
-sf=1
+sf=4
 
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
 INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates_maybms.lst"
@@ -66,9 +66,9 @@ for DATABASE in ${DATABASES[@]}
           PGPASSWORD=$PASSWORD psql -U $USER -d $DATABASE -h $HOST -p $PORT -f $OUTPUT_DIR"/${QUERY}" -o $DIRECTORY"/${QUERY}_maybms_output_${sf}.txt"
           END=$(date +%s.%N)
           ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
-          sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss maybms@127.0.0.1 ./stop_postgres.sh        
+          sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash stop_postgres.sh        
           sleep 3
-          sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss maybms@127.0.0.1 ./start_postgres.sh        
+          sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash start_postgres.sh        
           sleep 3
 
           done
@@ -85,9 +85,9 @@ for DATABASE in ${DATABASES[@]}
     sf=$(bc <<< "$sf + 1")
     
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -p $PORT -d maybms -c 'DROP DATABASE '${DATABASE}
-    sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss maybms@127.0.0.1 ./stop_postgres.sh        
+    sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash stop_postgres.sh        
     sleep 3
-    sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss maybms@127.0.0.1 ./start_postgres.sh        
+    sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash start_postgres.sh        
     sleep 3
 
    done
