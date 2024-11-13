@@ -14,8 +14,7 @@ OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templa
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_provsql_probabilities_tpch.csv"
-
+CSV="scale_provsql_maybms_probabilities_tpch.csv"
 echo "scale_factor,query,prob_eval(s)" > $CSV
 
 
