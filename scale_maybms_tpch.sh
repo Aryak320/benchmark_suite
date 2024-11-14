@@ -59,7 +59,7 @@ for DATABASE in ${DATABASES[@]}
     for QUERY in ${QUERIES[@]}
       do
           echo "Running $QUERY on $DATABASE"
-          for i in {1,2,3,4,5,6,7,,8,9,10} 
+          for i in {1,2,3,4,5,6,7,8,9,10} 
           do
           
           START=$(date +%s.%N)
