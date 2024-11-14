@@ -1,1 +1,4 @@
 scale_factor,query,prob_eval(s)
+6,tpch_1_p.sql,
+6,tpch_4_p.sql,.02122059760000000000
+6,tpch_12_p.sql,

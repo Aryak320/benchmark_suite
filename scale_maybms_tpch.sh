@@ -4,7 +4,7 @@
 USER="maybms"
 PASSWORD="maybms"
 PORT="5433"
-DATABASES=("tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
 QUERIES=("tpch_1_m.sql" "tpch_4_m.sql" "tpch_12_m.sql"  "tpch_15_m.sql")
 sf=4
@@ -15,7 +15,7 @@ OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templa
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_maybms_probabilities_tpch.csv"
+CSV="scale_maybms_probabilities_tpch_tconf.csv"
 
 echo "scale_factor,query,prob_eval(s)" > $CSV
 
