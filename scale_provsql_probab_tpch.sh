@@ -3,18 +3,18 @@
 # Database details
 USER="postgres"
 PASSWORD="1234"
-DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+DATABASES=("tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
 sf=6
 #QUERIES=("3_probab.sql" "6_probab.sql" "9_probab.sql" "10_probab.sql" "12_probab.sql" "14_probab.sql" "19_probab.sql" )
-QUERIES=("tpch_1_p.sql" "tpch_4_p.sql" "tpch_12_p.sql"  "tpch_15_p.sql")
+QUERIES=("tpch_4_p.sql" "tpch_12_p.sql"  "tpch_15_p.sql")
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
 INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates.lst"
 OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_provsql_maybms_probabilities_tpch_wodistinct.csv"
+CSV="scale_provsql_maybms_probabilities_tpch_6to10.csv"
 echo "scale_factor,query,prob_eval(s)" > $CSV
 
 
