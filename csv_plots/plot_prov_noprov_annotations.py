@@ -102,7 +102,7 @@ for i, query in enumerate(unique_queries):
     )
     fig.update_yaxes(
         range=[np.log10(y_min), np.log10(y_max)], type="log", row=row, col=col, secondary_y=False,
-        title_text="Execution time (log)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.1, 1, 10, 100]
+        title_text="Execution time (s)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.1, 1, 10, 100]
     )
     fig.update_yaxes(
         range=[overhead_y_min, overhead_y_max], type="linear", row=row, col=col, secondary_y=True,
@@ -128,7 +128,7 @@ fig.update_layout(
     )
 )
 fig.update_annotations(font_size=24)
-fig.update_traces(line={'width': 3})
+
 fig.update_yaxes(range=[0, 150], type="linear", row=5, col=1, secondary_y=True,autorange=False, tickvals=[0,100,120] )
 
 # Save the figure as a PDF
