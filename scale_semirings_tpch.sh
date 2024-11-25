@@ -1,16 +1,18 @@
 
 USER="postgres"
 PASSWORD="1234"
-DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+#DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+DATABASES=("tpc_scale_0_6")
+
 HOST="localhost"
-sf=1
-QUERIES=("6_tpch.sql" "3_tpch.sql"  "7_tpch.sql" "9_tpch.sql" "10_tpch.sql" "12_tpch.sql" "14_tpch.sql" "19_tpch.sql" )
+sf=6
+QUERIES=( "3_tpch.sql"  "7_tpch.sql" "9_tpch.sql" "10_tpch.sql" "12_tpch.sql" "14_tpch.sql" "19_tpch.sql" )
 
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
 OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
 
 
-CSV="scale_semirings_tpch.csv"
+CSV="scale_6_semirings_tpch.csv"
 
 echo "scale_factor,query,formula(s),counting(s),why(s)" > $CSV
 #Query generation
