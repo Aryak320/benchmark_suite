@@ -7,6 +7,7 @@ scale_factor,query,time(s)
 1,12_tpch.sql,1.0922843132
 1,14_tpch.sql,0.0295070055
 1,19_tpch.sql,0.3898596241
+1,1_tpch.sql,164.6037253308
 2,6_tpch.sql,1.6872341453
 2,3_tpch.sql,0.0503393984
 2,7_tpch.sql,0.5851317808
@@ -15,6 +16,7 @@ scale_factor,query,time(s)
 2,12_tpch.sql,2.1109438634
 2,14_tpch.sql,0.0296325053
 2,19_tpch.sql,0.6925507966
+2,1_tpch.sql,348.206794131
 3,6_tpch.sql,2.5734796731
 3,3_tpch.sql,0.0455196966
 3,7_tpch.sql,0.8125791509
@@ -79,5 +81,3 @@ scale_factor,query,time(s)
 10,12_tpch.sql,10.2335348925
 10,14_tpch.sql,0.0308200226
 10,19_tpch.sql,2.9308836719
-1,1_tpch.sql,164.6037253308
-2,1_tpch.sql,348.206794131
