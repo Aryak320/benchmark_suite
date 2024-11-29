@@ -13,10 +13,6 @@ prov = pd.read_csv('s_tpch_prov.csv')
 merged = pd.merge(d, prov, on=['query', 'scale_factor'], suffixes=('_noprov', '_prov'))
 merged['overhead'] = merged['time(s)_prov'] / merged['time(s)_noprov']
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
 # Concatenate data for all datasets
 concatenated = pd.concat([
     d.assign(dataset='noprov'),
@@ -42,19 +38,11 @@ fig = make_subplots(
         [{"secondary_y": True}, None]  # Row 5: Left is a subplot, right is for legend
     ],
     horizontal_spacing=0.2,
-<<<<<<< HEAD
     vertical_spacing=0.05
 )
 
 # Define colors and markers for the datasets
 colors = {'noprov': 'darkmagenta', 'prov': 'orange', 'overhead': 'blue'}
-=======
-    vertical_spacing=0.06
-)
-
-# Define colors and markers for the datasets
-colors = {'noprov': 'green', 'prov': 'red', 'overhead': 'blue'}
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
 markers = {'noprov': 'diamond-tall', 'prov': 'circle-dot', 'overhead': 'square-open-dot'}
 
 # Add traces for each query and dataset
@@ -72,21 +60,12 @@ for i, query in enumerate(unique_queries):
                     y=dataset_data['time(s)'],
                     mode='lines+markers',
                     opacity=0.9,
-<<<<<<< HEAD
                     marker=dict(symbol=markers[dataset], size=15 if dataset == 'prov' else 25),
                     line=dict(dash='dot' if dataset == 'overhead' else 'solid', width=1 if dataset == 'prov' else 1.5),
                     marker_color=colors[dataset],
                     legendgroup="with provenance" if dataset == 'prov' else 'without provenance',
                     name="with provenance" if dataset == 'prov' else 'without provenance',
                     showlegend= i==0  # Show legend only in the dedicated area
-=======
-                    marker=dict(symbol=markers[dataset], size=11 if dataset == 'prov' else 25),
-                    line=dict(dash='dot' if dataset == 'overhead' else 'solid', width=1 if dataset == 'prov' else 1.5),
-                    marker_color=colors[dataset],
-                    legendgroup="With provenance tracking" if dataset == 'prov' else 'Without provenance tracking',
-                    name="With provenance tracking " if dataset == 'prov' else 'Without provenance tracking',
-                    showlegend= i==0  
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
                 ),
                 row=row, col=col, secondary_y=False
             )
@@ -100,13 +79,8 @@ for i, query in enumerate(unique_queries):
                     line=dict(dash='dot',width=5),
                     marker_color=colors[dataset],
                     marker_line_width=2,
-<<<<<<< HEAD
                     legendgroup="overhead",
                     name="overhead",
-=======
-                    legendgroup="Overhead",
-                    name="Overhead",
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
                     showlegend=i==0
                 ),
                 row=row, col=col, secondary_y=True
@@ -128,30 +102,17 @@ for i, query in enumerate(unique_queries):
     )
     fig.update_yaxes(
         range=[np.log10(y_min), np.log10(y_max)], type="log", row=row, col=col, secondary_y=False,
-<<<<<<< HEAD
         title_text="Execution time (s)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.1, 1, 10, 100]
     )
     fig.update_yaxes(
         range=[overhead_y_min, overhead_y_max], type="linear", row=row, col=col, secondary_y=True,
         title_text="Overhead", titlefont={'size': 26}, tickfont=dict(size=26, color='blue')
-=======
-        title_text="Execution time (log)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.1, 1, 10, 100]
-    )
-    fig.update_yaxes(
-        range=[overhead_y_min, overhead_y_max], type="linear", row=row, col=col, secondary_y=True,
-        title_text="Overhead (linear)", titlefont={'size': 26}, tickfont=dict(size=26, color='blue')
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
     )
 
 # Add a legend to the last empty space
 fig.update_layout(
-<<<<<<< HEAD
     height=2600, 
     width=1400, 
-=======
-    height=2500, 
-    width=1500, 
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
     template="plotly_white",
     legend=dict(
         orientation="v",  # Vertical legend
@@ -167,7 +128,6 @@ fig.update_layout(
     )
 )
 fig.update_annotations(font_size=24)
-<<<<<<< HEAD
 
 fig.update_yaxes(range=[0, 150], type="linear", row=5, col=1, secondary_y=True,autorange=False, tickvals=[0,100,120] )
 
@@ -176,9 +136,3 @@ plotly.io.write_image(fig, 'overhead_tpch.pdf', format='pdf')
 
 
 
-=======
-fig.update_traces(line={'width': 4})
-fig.update_yaxes(range=[0,150],type="linear",row=5, col=1, secondary_y=True,autorange=False,tickvals=[0,100,120])
-# Save the figure as a PDF
-plotly.io.write_image(fig, 'overhead_tpch.pdf', format='pdf')
->>>>>>> 8a0f724bc322b82ea59a29a3b106d76ba8cc9d38
