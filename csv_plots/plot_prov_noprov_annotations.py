@@ -106,7 +106,7 @@ for i, query in enumerate(unique_queries):
     )
     fig.update_yaxes(
         range=[overhead_y_min, overhead_y_max], type="linear", row=row, col=col, secondary_y=True,
-        title_text="Overhead (linear)", titlefont={'size': 26}, tickfont=dict(size=26, color='blue')
+        title_text="Overhead", titlefont={'size': 26}, tickfont=dict(size=26, color='blue')
     )
 
 # Add a legend to the last empty space
