@@ -1,7 +1,10 @@
 import plotly.graph_objects as go
 import pandas as pd
 from plotly.subplots import make_subplots
+import plotly.io
 
+# Disable mathjax
+plotly.io.kaleido.scope.mathjax = None
 # Load the datasets
 provsql = pd.read_csv('provsql.csv')  # Replace with your ProvSQL CSV file path
 maybms = pd.read_csv('maybms.csv')  # Replace with your MayBMS CSV file path
@@ -13,10 +16,10 @@ combined = pd.concat([provsql, maybms], ignore_index=True)
 
 # Map query names for better display in the subplot titles
 query_map = {
-    "tpch_1_m.sql": "Query 1*",
-    "tpch_4_m.sql": "Query 4*",
-    "tpch_12_m.sql": "Query 12*",
-    "tpch_15_m.sql": "Query 15*"
+    "tpch_1_m.sql": "Query 1",
+    "tpch_4_m.sql": "Query 4",
+    "tpch_12_m.sql": "Query 12",
+    "tpch_15_m.sql": "Query 15"
 }
 combined["query"] = combined["query"].map(query_map)
 
@@ -26,11 +29,13 @@ unique_queries = combined["query"].unique()
 # Create a subplot figure (2x2 grid for 4 queries)
 fig = make_subplots(
     rows=2, cols=2,
-    subplot_titles=unique_queries
+    subplot_titles=unique_queries,
+    horizontal_spacing=0.15,
+    vertical_spacing=0.2
 )
 
 # Define colors and markers for the systems
-colors = {"ProvSQL": "blue", "MayBMS": "orange"}
+colors = {"ProvSQL": "orange", "MayBMS": "blue"}
 markers = {"ProvSQL": "circle", "MayBMS": "square"}
 
 # Add traces for each query
@@ -59,27 +64,25 @@ for i, query in enumerate(unique_queries):
             row=row,
             col=col
         )
-        fig.update_xaxes(range=[0, 11], type="linear", row=row, col=col, titlefont={'size':17},title_standoff=2,title_text="Scale factor",tickfont=dict(size=16),tickvals=[1,2,3,4,5,6,7,8,9,10])
-        fig.update_yaxes(type="log", row=row, col=col,titlefont={'size':17},title_standoff=0.005,title_text="Execution time(s) log scale",tickfont=dict(size=16),tickvals=[0.1,1,10,100] )
+        fig.update_xaxes(range=[0, 11],showline=True, type="linear", row=row, col=col, titlefont={'size':15},title_standoff=2,title_text="Scale factor",tickfont=dict(size=16),tickvals=[1,2,3,4,5,6,7,8,9,10])
+        fig.update_yaxes(range=[0,3],autorange=False,type="log", row=row, col=col,titlefont={'size':15},title_standoff=0.005,title_text="Execution time (s)",tickfont=dict(size=16),tickvals=[0.1,1,10,100,1000] )
 
-# Update layout with log scale and titles
 fig.update_layout(
     height=800,
     width=800,
-    title="Execution Time Comparison: ProvSQL vs. MayBMS",
     template="plotly_white",
     legend=dict(
         orientation="h",
         yanchor="bottom",
         y=-0.2,
         xanchor="center",
-        x=0.5
+        x=0.5,
+        font=dict(
+            size=17,
+            color="black"
+        )
     )
 )
 
-# Apply log scale to y-axes
-
-
-# Show the plot
-fig.show()
+plotly.io.write_image(fig, 'maybms_provsql_tpch.pdf', format='pdf')
 
