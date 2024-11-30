@@ -4,7 +4,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np  
 import plotly.io
+
 plotly.io.kaleido.scope.mathjax = None
+
 # Read CSV data
 d = pd.read_csv('s_tpch_no_prov.csv')
 prov = pd.read_csv('s_tpch_prov.csv')
@@ -28,7 +30,7 @@ n_queries = len(unique_queries)
 fig = make_subplots(
     rows=5, 
     cols=2, 
-    subplot_titles=[q.split('_')[0] + ".sql" for q in unique_queries] + ["Legend"],
+    subplot_titles=[f"Query {q.split('_')[0]}" for q in unique_queries] + ["Legend"],
     shared_yaxes=False, 
     specs=[
         [{"secondary_y": True}, {"secondary_y": True}],  # Row 1
@@ -38,7 +40,7 @@ fig = make_subplots(
         [{"secondary_y": True}, None]  # Row 5: Left is a subplot, right is for legend
     ],
     horizontal_spacing=0.2,
-    vertical_spacing=0.05
+    vertical_spacing=0.07
 )
 
 # Define colors and markers for the datasets
@@ -76,7 +78,7 @@ for i, query in enumerate(unique_queries):
                     y=dataset_data['time(s)'],
                     mode='lines+markers',
                     marker=dict(symbol=markers[dataset], size=20),
-                    line=dict(dash='dot',width=5),
+                    line=dict(dash='dot', width=5),
                     marker_color=colors[dataset],
                     marker_line_width=2,
                     legendgroup="overhead",
@@ -121,7 +123,6 @@ fig.update_layout(
         xanchor="center",
         x=0.77,
         font=dict(
-            family="Courier",
             size=30,
             color="black"
         )
@@ -129,10 +130,15 @@ fig.update_layout(
 )
 fig.update_annotations(font_size=24)
 
-fig.update_yaxes(range=[0, 150], type="linear", row=5, col=1, secondary_y=True,autorange=False, tickvals=[0,100,120] )
+fig.update_yaxes(range=[0, 150], type="linear", row=1, col=1, secondary_y=True, autorange=False, tickvals=[0, 100, 120])
+fig.update_yaxes(type="linear", row=1, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=2, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=3, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=4, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=4, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=5, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(range=[0,6],type="linear", row=2, col=1, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
+fig.update_yaxes(range=[0,6],type="linear", row=3, col=1, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
 
 # Save the figure as a PDF
 plotly.io.write_image(fig, 'overhead_tpch.pdf', format='pdf')
-
-
-
