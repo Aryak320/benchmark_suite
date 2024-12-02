@@ -5,9 +5,11 @@
 # Database details
 USER="postgres"
 PASSWORD="1234"
-DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+#DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
+DATABASES=( "tpc_scale_0_9" "tpc_scale_1_0")
+
 HOST="localhost"
-sf=1
+sf=9
 PORT="5432"
 QUERIES=("3_tpch_gprom.sql")
 
@@ -18,7 +20,8 @@ OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templa
 
 
 
-CSV="scale_gprom_tpch.csv"
+CSV="scale_gprom_tpch_9_10
+.csv"
 
 echo "scale_factor,query,time(s)" > $CSV
 
