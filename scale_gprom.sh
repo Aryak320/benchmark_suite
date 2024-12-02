@@ -2,12 +2,12 @@
 #this script creates 2 tpc_scale_h databases and adds provenance to the first one
 #change database details before running
 
-# Database details
+# Database detailstemplates_gprom
 USER="postgres"
 PASSWORD="1234"
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
-sf=9
+sf=1
 PORT="5432"
 
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
@@ -20,7 +20,7 @@ DIALECT="ansi"
 
 CSV="scale_gprom.csv"
 
-echo "scale_factor, gprom_prov(s)" > $CSV
+echo "scale_factor,gprom_prov(s)" > $CSV
 
 
 /home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/tools/dsqgen -DIRECTORY $DIRECTORY -INPUT $INPUT -OUTPUT_DIR $OUTPUT_DIR -DIALECT $DIALECT -RNGSEED $RNGSEED
@@ -76,6 +76,8 @@ for DATABASE in ${DATABASES[@]}
 
       for (( a=1; a<counter; a++ ))
          do
+
+          echo "running query$a"
           START=$(date +%s.%N)
 
           gprom -sqlfile $DIRECTORY/query${a}.sql -backend postgres -user $USER -passwd $PASSWORD -db $DATABASE -host $HOST -port $PORT  > $DIRECTORY"/gprom${a}_output.txt"
