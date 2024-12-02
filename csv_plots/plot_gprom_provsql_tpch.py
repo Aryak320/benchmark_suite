@@ -136,7 +136,7 @@ fig.update_yaxes(
     tickfont=dict(size=22),
     type="log",
     showline=True,
-    #tickvals=[0.1,1,10,100,1000] # Set y-axis to logarithmic scale
+    tickvals=[0.1,1,10,100,1000] # Set y-axis to logarithmic scale
 
 )
 

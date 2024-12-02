@@ -92,15 +92,16 @@ for i, query in enumerate(unique_queries):
     title_text="Scale factor",
     titlefont=dict(size=33),
     tickfont=dict(size=33),
+    showline=True,
     row=row, col=col
     #tickvals=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     )   
 
 # Update layout
 fig.update_layout(
-    height=3000,
-    width=1800,  # Adjust width for 2 columns
-    title_font_size=20,
+    height=2900,
+    width=1700,  # Adjust width for 2 columns
+    title_font_size=30,
     template="plotly_white",
     legend=dict(
         title=dict(
@@ -113,7 +114,7 @@ fig.update_layout(
         xanchor="center",
         x=0.5,
         font=dict(
-            size=33,
+            size=35,
             color="black"
         )
     ),
@@ -125,6 +126,7 @@ fig.update_layout(
 fig.update_yaxes(
     title_text="Execution time (s)",
     titlefont=dict(size=33),
+    showline=True,
     tickfont=dict(size=33),
     type="linear"  # Set y-axis to linear scale
 )
@@ -133,16 +135,17 @@ fig.update_yaxes(
 #     row=4,
 #     col=1
 # )
-# fig.update_yaxes(
-#     range=[0, 0.2],
-#     row=4,
-#     col=1
-# )
-# fig.update_yaxes(
-#     range=[0, 1],
-#     row=1,
-#     col=1
-# )
+fig.update_yaxes(
+    range=[0, 60],
+    tickvals=[0,10,20,30,40,50],
+    row=2,
+    col=2
+)
+fig.update_yaxes(
+     range=[0, 3.5],
+     row=3,
+    col=1
+)
 fig.update_yaxes(
     tickvals=[0, 200, 400, 600, 800, 1000, 1200, 1400, 1500, 1600],
     row=1,
