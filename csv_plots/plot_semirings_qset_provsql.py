@@ -1,19 +1,18 @@
 import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
+import plotly.io as pio
+
+# Disable MathJax for exporting
+pio.kaleido.scope.mathjax = None
 
 # Load the data
 data = pd.read_csv('scale_semirings.csv')
 
 # Define colors and markers for each semiring
-colors = {'formula(s)': 'darkblue', 'counting(s)': 'orange', 'why(s)': 'red'}
-markers = {'formula(s)': 'circle-open-dot', 'counting(s)': 'diamond-open', 'why(s)': 'square-open'}
+colors = {'formula(s)': 'darkblue', 'counting(s)': 'darkorange', 'why(s)': 'red'}
+markers = {'formula(s)': 'circle-open-dot', 'counting(s)': 'diamond-tall', 'why(s)': 'square'}
 legend_names = {'formula(s)': 'Formula', 'counting(s)': 'Counting', 'why(s)': 'Why(X)'}
-
-# Calculate y-axis tick values starting from 1
-y_min = max(1, data[['formula(s)', 'counting(s)', 'why(s)']].min().min())  # Ensure minimum is at least 1
-y_max = data[['formula(s)', 'counting(s)', 'why(s)']].max().max()
-#tickvals = [10**i for i in range(int(np.floor(np.log10(y_min))), int(np.ceil(np.log10(y_max)) + 1))]
 
 # Create the figure
 fig = go.Figure()
@@ -29,13 +28,34 @@ for semiring in ['formula(s)', 'counting(s)', 'why(s)']:
             opacity=0.9,
             marker=dict(
                 symbol=markers[semiring],
-                size=25 if semiring == 'formula(s)' else 14 if semiring == 'counting(s)' else 17,
-                line=dict(width=2, color='DarkSlateGrey')
+                size=25 if semiring == 'formula(s)' else 24 if semiring == 'counting(s)' else 10,
+                line=dict(color=colors[semiring],width =4 if semiring == 'formula(s)' else 2 if semiring == 'counting(s)' else 1)
             ),
-            line=dict(color=colors[semiring], width=4),
+            line=dict(color=colors[semiring], width=3),
             legendgroup=semiring
         )
     )
+
+# Load the second data file for provenance circuit computation
+prov_data = pd.read_csv('provsql_qset_annotations_overhead.csv')
+
+# Add trace for provenance circuit computation
+fig.add_trace(
+    go.Scatter(
+        x=prov_data['scale_factor'],
+        y=prov_data['provenance(s)'],
+        mode='lines+markers',
+        opacity=0.9,
+        name="Provenance Circuit Computation",
+        marker=dict(
+            symbol='circle',
+            size=16,
+            line=dict(width=2, color='magenta')
+        ),
+        line=dict(color='magenta', width=3),
+        legendgroup="Provenance Circuit Computation"  # Separate legend group
+    )
+)
 
 # Update layout
 fig.update_layout(
@@ -50,7 +70,7 @@ fig.update_layout(
         ),
         orientation="h",  # Horizontal legend
         yanchor="bottom",
-        y=-0.25,  # Push below the chart
+        y=-0.6,  # Push below the chart
         xanchor="center",
         x=0.5,
         font=dict(
@@ -72,13 +92,9 @@ fig.update_yaxes(
     title_text="Execution time (s)",
     titlefont=dict(size=27),
     tickfont=dict(size=30),
-    type="linear"  # Set y-axis to logarithmic scale
-    #tickvals=[100,1000,10000],  # Use tick values starting from 1
-    #ticktext=[f"{val:g}" for val in tickvals],  # Format tick labels
-    #range=[1, np.ceil(np.log10(y_max))]  # Force y-axis to start at log10(1) = 0
+    type="log",
+    tickvals=[0,1,10,100,1000,10000]  # Set y-axis to linear scale
 )
 
 # Save the figure as a PDF
-import plotly.io as pio
-pio.kaleido.scope.mathjax = None
 pio.write_image(fig, 'qset_semirings_provsql.pdf', format='pdf')
