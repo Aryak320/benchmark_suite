@@ -104,17 +104,17 @@ for i, query in enumerate(unique_queries):
     )
     fig.update_yaxes(
         range=[np.log10(y_min), np.log10(y_max)], type="log", row=row, col=col, secondary_y=False,
-        title_text="Execution time (s)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.1, 1, 10, 100]
+        title_text="Execution time (s)", titlefont={'size': 26}, tickfont=dict(size=26), tickvals=[0.01,0.1, 1, 10, 100]
     )
     fig.update_yaxes(
         range=[overhead_y_min, overhead_y_max], type="linear", row=row, col=col, secondary_y=True,
-        title_text="Overhead", titlefont={'size': 26}, tickfont=dict(size=26, color='blue')
+        title_text="Overhead", titlefont=dict(size=26,color='blue'), tickfont=dict(size=26, color='blue')
     )
 
 # Add a legend to the last empty space
 fig.update_layout(
-    height=2600, 
-    width=1400, 
+    height=2500, 
+    width=1200, 
     template="plotly_white",
     legend=dict(
         orientation="v",  # Vertical legend

@@ -69,7 +69,6 @@ fig.update_annotations(font_size=30)
 
 # Show the figure
 fig.update_traces(line={'width': 3})
-fig
 
 # Save the figure as a PDF
 plotly.io.write_image(fig, 'probabilities_tpch_provsql.pdf', format='pdf')
