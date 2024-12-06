@@ -1,0 +1,7 @@
+scale_factor,query,prob_eval(s)
+1,query10_cm.sql,.020922655
+1,query13_cm.sql,2.333819757
+1,query14_cm.sql,.020713350
+1,query16_cm.sql,14.879998593
+2,query10_cm.sql,.020867179
+2,query13_cm.sql,4.671324512
