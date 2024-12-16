@@ -28,7 +28,7 @@ n_queries = len(unique_queries)
 
 # Define subplot layout: 5 rows, 2 columns, last cell in column 2 for legend
 fig = make_subplots(
-    rows=5, 
+    rows=3, 
     cols=2, 
     subplot_titles=[f"Query {q.split('_')[0]}" for q in unique_queries] + ["Legend"],
     shared_yaxes=False, 
@@ -36,11 +36,11 @@ fig = make_subplots(
         [{"secondary_y": True}, {"secondary_y": True}],  # Row 1
         [{"secondary_y": True}, {"secondary_y": True}],  # Row 2
         [{"secondary_y": True}, {"secondary_y": True}],  # Row 3
-        [{"secondary_y": True}, {"secondary_y": True}],  # Row 4
-        [{"secondary_y": True}, None]  # Row 5: Left is a subplot, right is for legend
+        # [{"secondary_y": True}, {"secondary_y": True}],  # Row 4
+        # [{"secondary_y": True}, None]  # Row 5: Left is a subplot, right is for legend
     ],
-    horizontal_spacing=0.2,
-    vertical_spacing=0.07
+    horizontal_spacing=0.28,
+    vertical_spacing=0.1
 )
 
 # Define colors and markers for the datasets
@@ -113,15 +113,15 @@ for i, query in enumerate(unique_queries):
 
 # Add a legend to the last empty space
 fig.update_layout(
-    height=2500, 
-    width=1200, 
+    height=1600, 
+    width=1100, 
     template="plotly_white",
     legend=dict(
-        orientation="v",  # Vertical legend
+        orientation="h",  
         yanchor="middle",  # Align to the middle of the legend cell
-        y=0.08,  # Center it vertically within the right column
+        #y=0.08,  # Center it vertically within the right column
         xanchor="center",
-        x=0.77,
+        x=0.5,
         font=dict(
             size=30,
             color="black"
@@ -131,14 +131,14 @@ fig.update_layout(
 fig.update_annotations(font_size=24)
 
 fig.update_yaxes(range=[0, 150], type="linear", row=1, col=1, secondary_y=True, autorange=False, tickvals=[0, 100, 120])
-fig.update_yaxes(type="linear", row=1, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
-fig.update_yaxes(type="linear", row=2, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+# fig.update_yaxes(type="linear", row=1, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=2, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
+# fig.update_yaxes(type="linear", row=3, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
+fig.update_yaxes(type="linear", row=3, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
+# fig.update_yaxes(type="linear", row=4, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
 fig.update_yaxes(type="linear", row=3, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
-fig.update_yaxes(type="linear", row=4, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
-fig.update_yaxes(type="linear", row=4, col=2, secondary_y=True, tickvals=[0,1,2,3,4])
-fig.update_yaxes(type="linear", row=5, col=1, secondary_y=True, tickvals=[0,1,2,3,4])
-fig.update_yaxes(range=[0,6],type="linear", row=2, col=1, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
-fig.update_yaxes(range=[0,6],type="linear", row=3, col=1, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
+fig.update_yaxes(range=[0,6],type="linear", row=1, col=2, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
+fig.update_yaxes(range=[0,6],type="linear", row=2, col=2, secondary_y=True,autorange=False, tickvals=[0,1,2,3,4,5])
 
 # Save the figure as a PDF
 plotly.io.write_image(fig, 'overhead_tpch.pdf', format='pdf')

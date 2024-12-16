@@ -17,11 +17,11 @@ n_queries = len(unique_queries)
 
 # Define subplot layout: 4 rows, 2 columns
 fig = make_subplots(
-    rows=4,
+    rows=3,
     cols=2,
     subplot_titles=[f"Query {q}" for q in unique_queries],
     horizontal_spacing=0.1,
-    vertical_spacing=0.06
+    vertical_spacing=0.1
 )
 
 # Define colors and markers for each semiring
@@ -99,8 +99,8 @@ for i, query in enumerate(unique_queries):
 
 # Update layout
 fig.update_layout(
-    height=2900,
-    width=1700,  # Adjust width for 2 columns
+    height=2100,
+    width=1600,  # Adjust width for 2 columns
     title_font_size=30,
     template="plotly_white",
     legend=dict(
@@ -108,11 +108,11 @@ fig.update_layout(
             text="Semiring instantiations:",  # Set legend title
             font=dict(size=30)
         ),
-        orientation="h",  # Horizontal legend
+        orientation="v",  # Horizontal legend
         yanchor="bottom",
-        y=-0.1,  # Push below the chart
-        xanchor="center",
-        x=0.5,
+        y=0.1,  # Push below the chart
+        xanchor="right",
+        x=1,
         font=dict(
             size=35,
             color="black"
@@ -139,21 +139,21 @@ fig.update_yaxes(
     range=[0, 60],
     tickvals=[0,10,20,30,40,50],
     row=2,
-    col=2
-)
-fig.update_yaxes(
-     range=[0, 3.5],
-     row=3,
     col=1
 )
+# fig.update_yaxes(
+#      range=[0, 3.5],
+#      row=3,
+#     col=1
+# )
 fig.update_yaxes(
     tickvals=[0, 200, 400, 600, 800, 1000, 1200, 1400, 1500, 1600],
     row=1,
-    col=2,
+    col=1,
 )
 fig.update_yaxes(
     tickvals=[0, 200, 400, 600, 800, 1000, 1200, 1400, 1500, 1600],
-    row=3,
+    row=2,
     col=2,
 )
 # fig.update_yaxes(
