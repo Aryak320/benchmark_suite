@@ -9,11 +9,9 @@ HOST="localhost"
 QUERIES=("query10_cm.sql" "query13_cm.sql"  "query14_cm.sql" "query16_cm.sql")
 sf=1
 
-DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
-INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates_maybms.lst"
-OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
-RNGSEED=3467678
-DIALECT="ansi"
+DIRECTORY="benchmark_suite/query_templates/"
+OUTPUT_DIR=""
+
 
 CSV="maybms_unsafe.csv"
 
@@ -92,7 +90,7 @@ for DATABASE in ${DATABASES[@]}
    
     sf=$(bc <<< "$sf + 1")
     
-    # PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -p $PORT -d maybms -c 'DROP DATABASE '${DATABASE}
+    PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -p $PORT -d maybms -c 'DROP DATABASE '${DATABASE}
     sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash stop_postgres.sh        
     sleep 3
     sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash start_postgres.sh        
