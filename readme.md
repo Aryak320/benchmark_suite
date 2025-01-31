@@ -1,4 +1,4 @@
-This contains scripts which were used to benchmark ProvSQL for overheads and against other related systems like GProM and MaybMS.|
+This contains scripts which were used to benchmark ProvSQL for overheads and against other related systems like GProM and MaybMS.
 Prerequisites:
 1. Install DSQGEN from 
 3. Add DSQGEN as path variable
