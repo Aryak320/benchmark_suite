@@ -83,12 +83,14 @@ fig.update_layout(
 
 # Update axes
 fig.update_xaxes(
+    showline=True,
     title_text="Scale factor",
     titlefont=dict(size=27),
     tickfont=dict(size=30),
     tickvals=sorted(data['scale_factor'].unique())  # Unique scale factors as ticks
 )
 fig.update_yaxes(
+    showline=True,
     title_text="Execution time (s)",
     titlefont=dict(size=27),
     tickfont=dict(size=30),

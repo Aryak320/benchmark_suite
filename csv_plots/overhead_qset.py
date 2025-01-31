@@ -71,11 +71,12 @@ fig.update_layout(
         tickvals=[0.01,0.1,1,10,100,1000]
     ),
     yaxis2=dict(
-        range=[overhead_y_min, overhead_y_max],
+        range=[0, 5],
         type="linear",
         title_text="Overhead",
-        titlefont={'size': 30},
+        titlefont=dict(size=30,color='blue'),
         tickfont=dict(size=30, color='blue'),
+        tickvals=[0,1,2,3,4],
         overlaying="y",  # Overlay the secondary y-axis
         side="right"
     ),
