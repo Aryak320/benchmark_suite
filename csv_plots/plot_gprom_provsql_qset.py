@@ -96,8 +96,8 @@ fig.add_trace(
 
 # Update layout
 fig.update_layout(
-    height=1100,
-    width=700,
+    height=600,
+    width=500,
     title_font_size=12,
     template="plotly_white",
     legend=dict(
@@ -106,7 +106,7 @@ fig.update_layout(
         ),
         orientation="h",
         yanchor="bottom",
-        y=-0.2,
+        y=-0.48,
         xanchor="center",
         x=0.5,
         font=dict(size=17)
@@ -131,8 +131,6 @@ fig.update_yaxes(
     tickvals=[10,100,1000,10000]
 )
 
-# Show the plot
-fig.show()
 
 # Save the figure as a PDF
 pio.write_image(fig, 'gprom_qset.pdf', format='pdf')

@@ -1,32 +1,25 @@
-import pandas as pd
 import plotly.graph_objects as go
+import pandas as pd
 from plotly.subplots import make_subplots
 import plotly.io
 
-# Disable MathJax rendering
+# Disable mathjax
 plotly.io.kaleido.scope.mathjax = None
+# Load the datasets
+provsql = pd.read_csv('provsql_unsafe.csv')  # Replace with your ProvSQL CSV file path
+maybms = pd.read_csv('maybms_unsafe.csv')  # Replace with your MayBMS CSV file path
 
-# Load the dataset
-df = pd.read_csv('unsafe.csv')
-
-# Add system columns for easier plotting
-provsql = df[["scale_factor", "query", "provsql_time"]].copy()
-provsql["system"] = "ProvSQL"
-provsql.rename(columns={"provsql_time": "execution_time"}, inplace=True)
-
-maybms = df[["scale_factor", "query", "maybms_time"]].copy()
-maybms["system"] = "MayBMS"
-maybms.rename(columns={"maybms_time": "execution_time"}, inplace=True)
-
-# Combine both datasets into a single DataFrame
+# Combine both datasets into a single DataFrame for easier handling
+provsql['system'] = 'ProvSQL'
+maybms['system'] = 'MayBMS'
 combined = pd.concat([provsql, maybms], ignore_index=True)
 
 # Map query names for better display in the subplot titles
 query_map = {
-    "query10_cp.sql": "Query 13",
-    "query13_cp.sql": "Query 16",
-    "query14_cp.sql": "Query 10",
-    "query16_cp.sql": "Query 16"
+    "query11.sql": "Query 11",
+    "query14.sql": "Query 14",
+    "query15.sql": "Query 15",
+    "query17.sql": "Query 17"
 }
 combined["query"] = combined["query"].map(query_map)
 
@@ -60,45 +53,20 @@ for i, query in enumerate(unique_queries):
         fig.add_trace(
             go.Scatter(
                 x=system_data["scale_factor"],
-                y=system_data["execution_time"],
+                y=system_data["prob_eval(s)"],
                 mode="lines+markers",
                 name=system if i == 0 else None,  # Add legend only for the first query
-                legendgroup=system,
+                legendgroup="ProvSQL" if system == 'ProvSQL' else 'MayBMS',
                 marker=dict(symbol=markers[system]),
                 line=dict(color=colors[system]),
-                showlegend=i == 0
+                showlegend= i==0
             ),
             row=row,
             col=col
         )
+        fig.update_xaxes(range=[0, 11],showline=True, type="linear", row=row, col=col, titlefont={'size':15},title_standoff=2,title_text="Scale factor",tickfont=dict(size=16),tickvals=[1,2,3,4,5,6,7,8,9,10])
+        fig.update_yaxes(range=[0,3],autorange=False,type="log", row=row, col=col,titlefont={'size':15},title_standoff=0.005,title_text="Execution time (s)",tickfont=dict(size=16),tickvals=[0.1,1,10,100,1000] )
 
-    # Update axes for the current subplot
-    fig.update_xaxes(
-        range=[0, 11],
-        showline=True,
-        type="linear",
-        row=row,
-        col=col,
-        titlefont={'size': 15},
-        title_standoff=2,
-        title_text="Scale Factor",
-        tickfont=dict(size=16),
-        tickvals=list(range(1, 11))
-    )
-    fig.update_yaxes(
-        
-        
-        type="log",
-        row=row,
-        col=col,
-        titlefont={'size': 15},
-        title_standoff=0.005,
-        title_text="Execution Time (s)",
-        tickfont=dict(size=16),
-        tickvals=[0.1, 1, 10, 100, 1000]
-    )
-
-# Final layout adjustments
 fig.update_layout(
     height=800,
     width=800,
@@ -109,9 +77,13 @@ fig.update_layout(
         y=-0.2,
         xanchor="center",
         x=0.5,
-        font=dict(size=17, color="black")
+        font=dict(
+            size=17,
+            color="black"
+        )
     )
 )
+fig.update_yaxes(range=[-2,1],autorange=False,type="log", row=1, col=1,titlefont={'size':15},title_standoff=0.005,title_text="Execution time (s)",tickfont=dict(size=16),tickvals=[0.01,0.1,1,10,100] )
 
-# Save the figure as a PDF
 plotly.io.write_image(fig, 'unsafe.pdf', format='pdf')
+

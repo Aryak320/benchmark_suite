@@ -7,9 +7,9 @@ pio.kaleido.scope.mathjax = None
 
 # Load the data
 gprom_data = pd.read_csv('scale_gprom_tpch.csv')
-no_prov_data = pd.read_csv('s_tpch_no_prov.csv')
-prov_data = pd.read_csv('s_tpch_prov.csv')
-semirings_data = pd.read_csv('scale_avg_semirings_tpch.csv')
+no_prov_data = pd.read_csv('q3_tpch_no_prov.csv')
+prov_data = pd.read_csv('q3_tpch_prov.csv')
+semirings_data = pd.read_csv('q3_avg_semirings_tpch.csv')
 
 # Filter data for Query 3
 query = '3_tpch.sql'
@@ -104,8 +104,8 @@ fig.add_trace(
 
 # Update layout
 fig.update_layout(
-    height=1100,
-    width=700,
+    height=900,
+    width=500,
     title_font_size=12,
     template="plotly_white",
     legend=dict(
@@ -114,7 +114,7 @@ fig.update_layout(
         ),
         orientation="h",
         yanchor="bottom",
-        y=-0.2,
+        y=-0.26,
         xanchor="center",
         x=0.5,
         font=dict(size=17)
@@ -140,6 +140,6 @@ fig.update_yaxes(
 
 )
 
-fig.show()
+
 # Save the figure as a PDF
 pio.write_image(fig, 'gprom_tpch.pdf', format='pdf')

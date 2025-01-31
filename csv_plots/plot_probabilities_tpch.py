@@ -49,17 +49,17 @@ fig.update_xaxes(range=[0, 11],showline=True, type="linear", titlefont={'size':3
 fig.update_yaxes(range=[-2,2],zeroline=True,autorange=False,type="log", titlefont={'size':30}, title_standoff=0.005, title_text="Execution time (s)", tickfont=dict(size=30), tickvals=[0.01,0.1,1,10,100])
 
 fig.update_layout(
-    height=1000,  # Adjust height dynamically based on the number of queries
-    width=900,
+    height=950,  # Adjust height dynamically based on the number of queries
+    width=800,
     template="plotly_white",
     legend=dict(
         orientation="h",  # Horizontal layout
         yanchor="bottom",  # Anchor the legend to the bottom
-        y=-0.3,
-        xanchor="center",  # Center horizontally
-        x=0.48,
+        y=-0.26,
+        xanchor="center", # Center horizontally
+        x=0.40,
         font=dict(
-            size=26,
+            size=29,
             color="black"
         )
     )

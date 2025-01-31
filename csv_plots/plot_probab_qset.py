@@ -29,8 +29,8 @@ fig.add_trace(
 
 # Update layout
 fig.update_layout(
-    height=500,
-    width=800,
+    height=600,
+    width=500,
     title_font_size=20,
     template="plotly_white",
     legend=dict(
@@ -60,13 +60,13 @@ fig.update_xaxes(
     tickvals=sorted(prob_data['scale_factor'].unique())
 )
 fig.update_yaxes(
-    range=[0,4],
+    range=[2,4],
     showline=True,
     title_text="Execution time (s)",
     type='log',
     titlefont=dict(size=24),
     tickfont=dict(size=24),
-    tickvals=[1,10,100,1000,10000]
+    tickvals=[100,1000,10000]
 )
 
 # Save the figure as a PDF
