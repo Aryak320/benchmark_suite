@@ -18,7 +18,7 @@ OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templa
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_gprom.csv"
+CSV="dummy.csv"
 
 echo "scale_factor,gprom_prov(s)" > $CSV
 
@@ -98,7 +98,7 @@ for DATABASE in ${DATABASES[@]}
 
     echo "$sf,$TIMES" >> $CSV
     sf=$(bc <<< "$sf + 1")
-    PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d postgres -c 'DROP DATABASE '${DATABASE}
+    #PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d postgres -c 'DROP DATABASE '${DATABASE}
     service postgresql restart
    done
 

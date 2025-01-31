@@ -8,12 +8,12 @@ HOST="localhost"
 sf=1
 
 DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
-INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates.lst"
+INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/query_additional.lst"
 OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_provsql_probabilities.csv"
+CSV="dummy.csv"
 
 echo "scale_factor, prob_eval(s)" > $CSV
 
@@ -22,9 +22,9 @@ echo "scale_factor, prob_eval(s)" > $CSV
 
 mv $OUTPUT_DIR/query_0.sql $OUTPUT_DIR/qset.sql
 
-python3 probab.py $OUTPUT_DIR/qset.sql
-sed -i '1iSET search_path to public, provsql ;' $OUTPUT_DIR"/qset_probab.sql"
-sed -i "1i--${RNGSEED}" $OUTPUT_DIR"/qset_probab.sql"
+# python3 probab.py $OUTPUT_DIR/qset.sql
+# sed -i '1iSET search_path to public, provsql ;' $OUTPUT_DIR"/qset_probab.sql"
+# sed -i "1i--${RNGSEED}" $OUTPUT_DIR"/qset_probab.sql"
 
 TIMES=0
 

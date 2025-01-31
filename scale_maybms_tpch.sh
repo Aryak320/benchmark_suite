@@ -21,8 +21,6 @@ echo "scale_factor,query,prob_eval(s)" > $CSV
 
 
 
-
-
 TIMES=0
 ADD_TIMES=0
 

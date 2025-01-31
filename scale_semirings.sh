@@ -15,7 +15,7 @@ OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templa
 RNGSEED=3467678
 DIALECT="ansi"
 
-CSV="scale_semirings.csv"
+CSV="dummy.csv"
 
 echo "scale_factor, formula(s), counting(s), why(s)" > $CSV
 

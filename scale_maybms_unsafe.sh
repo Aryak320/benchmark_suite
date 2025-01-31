@@ -92,7 +92,7 @@ for DATABASE in ${DATABASES[@]}
    
     sf=$(bc <<< "$sf + 1")
     
-    PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -p $PORT -d maybms -c 'DROP DATABASE '${DATABASE}
+    # PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -p $PORT -d maybms -c 'DROP DATABASE '${DATABASE}
     sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash stop_postgres.sh        
     sleep 3
     sshpass -p $PASSWORD ssh -p 2222 -oHostKeyAlgorithms=+ssh-dss  maybms@127.0.0.1 sudo bash start_postgres.sh        
