@@ -2,15 +2,15 @@
 
 
 # Database details
-USER="postgres"
-PASSWORD="1234"
+USER=""
+PASSWORD=""
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
-HOST="localhost"
+HOST=""
 sf=1
 
-DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
-INPUT="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/templates.lst"
-OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
+DIRECTORY="benchmark_suite/query_templates/"
+INPUT="benchmark_suite/query_templates/provsql_prov.lst"
+OUTPUT_DIR="" #enter path to output directory of choice
 RNGSEED=3467678
 DIALECT="ansi"
 
