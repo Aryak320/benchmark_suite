@@ -2,6 +2,9 @@
 
 This contains scripts which were used to benchmark ProvSQL for overheads and against other related systems like GProM and MaybMS.
 
+Details about this benchmark are available in a [technical
+report](techreport.pdf).
+
 ## Prerequisites
 
 1. Install DSQGEN from [TPC-DS](https://www.tpc.org/TPC_Documents_Current_Versions/download_programs/tools-download-request5.asp?bm_type=TPC-DS&bm_vers=4.0.0&mode=CURRENT-ONLY)
@@ -18,5 +21,3 @@ This contains scripts which were used to benchmark ProvSQL for overheads and aga
 2. For each of the scripts, database details and path to output directories are to be added corresponding to the postgresql setup.
 
 3. csv files and plotting scripts for the final results that were used in the benchmark are available in the csv_plots directory.
-
-
