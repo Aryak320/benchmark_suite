@@ -2,7 +2,7 @@
 
 This contains scripts which were used to benchmark ProvSQL for overheads and against other related systems like GProM and MaybMS.
 
-Details about this benchmark are available in a [technical
+Details about this benchmark are available in the [appendix of a technical
 report](techreport.pdf).
 
 ## Prerequisites
