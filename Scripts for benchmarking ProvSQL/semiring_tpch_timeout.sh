@@ -1,14 +1,14 @@
 #!/bin/bash
 
-USER="postgres"
-PASSWORD="1234"
+USER=""
+PASSWORD=""
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
-HOST="localhost"
+HOST=""
 sf=1
-QUERIES=("6_tpch.sql" "3_tpch.sql"  "7_tpch.sql" "9_tpch.sql" "10_tpch.sql" "12_tpch.sql" "14_tpch.sql" "19_tpch.sql")
+QUERIES=("6_tpch.sql"   "7_tpch.sql" "9_tpch.sql"  "12_tpch.sql" "14_tpch.sql" "19_tpch.sql")
 
-DIRECTORY="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates/"
-OUTPUT_DIR="/home/slide/sena/BENCHMARK/DSGen-software-code-3.2.0rc1/query_templates"
+DIRECTORY="benchmark_suite/query_templates/"
+OUTPUT_DIR=""
 
 CSV="scale_semirings_tpch.csv"
 
@@ -70,6 +70,24 @@ for DATABASE in "${DATABASES[@]}"; do
         echo "Running $QUERY"
         
         for TYPE in formula counting why; do
+    #avg runtime
+
+    #       for i in {1,2,3,4,5,6,7,,8,9,10} 
+    #       do
+          
+            # START=$(date +%s.%N)
+            # if ! PGPASSWORD="$PASSWORD" psql -U "$USER" -h "$HOST" -d "$DATABASE" -f "$OUTPUT_DIR/${QUERY%.*}_${TYPE}.sql" -o "$DIRECTORY/${QUERY%.*}_${TYPE}_output.txt" & sleep 1800; then
+            #     pkill -P $!
+            #     printf "Query timed out: %s\n" "$QUERY" >> "$CSV"
+            #     continue
+            # fi
+            # END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+    #       done
+
+    #       TIME=$(echo "($ADD_TIMES)/10" | bc -l)
+
             START=$(date +%s.%N)
             if ! PGPASSWORD="$PASSWORD" psql -U "$USER" -h "$HOST" -d "$DATABASE" -f "$OUTPUT_DIR/${QUERY%.*}_${TYPE}.sql" -o "$DIRECTORY/${QUERY%.*}_${TYPE}_output.txt" & sleep 1800; then
                 pkill -P $!

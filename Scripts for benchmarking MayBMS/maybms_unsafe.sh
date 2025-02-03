@@ -6,7 +6,7 @@ PASSWORD="maybms"
 PORT="5433"
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale__0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST="localhost"
-QUERIES=("query10_cm.sql" "query13_cm.sql"  "query14_cm.sql" "query16_cm.sql")
+QUERIES=("query11_cm.sql" "query14_cm.sql"  "query15_cm.sql" "query17_cm.sql")
 sf=1
 
 DIRECTORY="benchmark_suite/query_templates/"

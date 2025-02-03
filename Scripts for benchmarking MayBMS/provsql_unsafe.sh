@@ -5,7 +5,7 @@ PASSWORD=""
 DATABASES=("tpc_scale_0_1" "tpc_scale_0_2" "tpc_scale_0_3" "tpc_scale_0_4" "tpc_scale_0_5" "tpc_scale_0_6" "tpc_scale_0_7" "tpc_scale_0_8" "tpc_scale_0_9" "tpc_scale_1_0")
 HOST=""
 sf=1
-QUERIES=("query10_cp.sql" "query13_cp.sql"  "query14_cp.sql" "query16_cp.sql")
+QUERIES=("query11_cp.sql" "query14_cp.sql"  "query15_cp.sql" "query17_cp.sql")
 DIRECTORY="benchmark_suite/query_templates/"
 OUTPUT_DIR=""
 

@@ -26,7 +26,7 @@ echo "scale_factor,gprom_prov(s)" > $CSV
 # Rename the output file
  mv $OUTPUT_DIR/query_0.sql $OUTPUT_DIR/qset.sql
  TIMES=0
-
+ #       ADD_TIMES=0
  counter=1
 
   
@@ -74,6 +74,23 @@ for DATABASE in ${DATABASES[@]}
 
       for (( a=1; a<counter; a++ ))
          do
+          #avg runtime
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #        START=$(date +%s.%N)
+
+          #gprom -sqlfile $DIRECTORY/query${a}.sql -backend postgres -user $USER -passwd $PASSWORD -db $DATABASE -host $HOST -port $PORT  > $DIRECTORY"/gprom${a}_output.txt"
+
+         # END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
+
+    #       difference=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       count_times=$(echo "$count_times + $difference" | bc)
+    #       ADD_TIMES=0
 
           echo "running query$a"
           START=$(date +%s.%N)

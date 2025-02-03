@@ -94,6 +94,23 @@ for DATABASE in ${DATABASES[@]}
     service postgresql restart
 
     echo "Running qset_why.sql on provenance added $DATABASE"
+
+    #avg run time
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #       START=$(date +%s.%N)
+    #       PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY}" -o $DIRECTORY"/${QUERY}_output_${sf}.txt"
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
+
+    #       TIMES=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       echo "$sf,$QUERY,$TIMES" >> $CSV
+    #       ADD_TIMES=0
+    
     START=$(date +%s.%N)
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_why.sql" -o $DIRECTORY"qset_why_output.txt"
     END=$(date +%s.%N)

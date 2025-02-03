@@ -48,7 +48,21 @@ for DATABASE in ${DATABASES[@]}
     PGPASSWORD=$PASSWORD psql -U $USER -d $DATABASE -h $HOST <schema/index.sql
 
 
+    # avg runtime
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #       START=$(date +%s.%N)
+    #       PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset.sql" -o  $DIRECTORY"qset_output.txt"
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
 
+    #       TIMES=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       
+    #       ADD_TIMES=0
     echo "Running qset.sql on $DATABASE"
     START=$(date +%s.%N)
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset.sql" -o $DIRECTORY"qset_output.txt"

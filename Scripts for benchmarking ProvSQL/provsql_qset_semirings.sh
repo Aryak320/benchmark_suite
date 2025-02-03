@@ -95,19 +95,66 @@ for DATABASE in ${DATABASES[@]}
     PGPASSWORD=$PASSWORD psql -U $USER -d ${DATABASE} -h $HOST <schema/create_why_map.sql
 
     
+        # avg runtime
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #       START=$(date +%s.%N)
+    #           PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_formula.sql" -o $DIRECTORY"qset_formula_output.txt"
 
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
+
+    #       TIMES_f=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       
+    #       ADD_TIMES=0
     echo "Running qset_formula.sql on $DATABASE"
     START=$(date +%s.%N)
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_formula.sql" -o $DIRECTORY"qset_formula_output.txt"
     END=$(date +%s.%N)
     TIMES_f=$(echo "$END - $START" | bc)
+    
+        # avg runtime
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #       START=$(date +%s.%N)
+    #           PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_counting.sql" -o $DIRECTORY"qset_counting_output.txt"
 
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
+
+    #       TIMES_c=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       
+    #       ADD_TIMES=0
     echo "Running qset_counting.sql on $DATABASE"
     START=$(date +%s.%N)
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_counting.sql" -o $DIRECTORY"qset_counting_output.txt"
     END=$(date +%s.%N)
     TIMES_c=$(echo "$END - $START" | bc)
+    
+        # avg runtime
+    #       for i in {1,2,3,4,5,6,7,8,9,10} 
+    #       do
+    #       echo "run $i"
+    #       START=$(date +%s.%N)
+    #           PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_why.sql" -o $DIRECTORY"qset_why_output.txt"
 
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+               
+    #       done
+
+    #       TIMES_w=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       
+    #       ADD_TIMES=0
     echo "Running qset_why.sql on $DATABASE"
     START=$(date +%s.%N)
     PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/qset_why.sql" -o $DIRECTORY"qset_why_output.txt"

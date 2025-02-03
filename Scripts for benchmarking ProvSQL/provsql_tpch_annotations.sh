@@ -44,6 +44,24 @@ for DATABASE in ${DATABASES[@]}
       done
     PGPASSWORD=$PASSWORD psql -U $USER -d $DATABASE -h $HOST <schema/add_provenance.sql
     PGPASSWORD=$PASSWORD psql -U $USER -d $DATABASE -h $HOST <schema/index.sql
+    #avg runtime
+    # for QUERY in ${QUERIES[@]}
+    #   do
+    #        echo "Running $QUERY on $DATABASE"
+    #       for i in {1,2,3,4,5,6,7,,8,9,10} 
+    #       do
+          
+    #       START=$(date +%s.%N)
+    #       PGPASSWORD=$PASSWORD psql -U $USER -h $HOST -d $DATABASE -f $OUTPUT_DIR"/${QUERY}" -o $DIRECTORY"/${QUERY}_output_${sf}.txt"
+    #       END=$(date +%s.%N)
+    #       ADD_TIMES=$(echo "($ADD_TIMES + $END - $START)" | bc -l)
+    #       service postgresql restart
+    #       done
+
+    #       TIMES=$(echo "($ADD_TIMES)/10" | bc -l)
+    #       echo "$sf,$QUERY,$TIMES" >> $CSV_PROV
+    #       ADD_TIMES=0
+    #   done
 
     for QUERY in ${QUERIES[@]}
       do

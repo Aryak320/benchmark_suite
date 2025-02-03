@@ -1,2 +1,4 @@
-SELECT  c.c_name, o.o_orderkey, l.l_linenumber,conf() FROM customer_s c, orders_s o, lineitem_s l 
-WHERE c.c_custkey = o.o_custkey AND o.o_orderkey = l.l_orderkey AND o.o_totalprice >= 91123 AND o.o_totalprice <= 110058 GROUP BY c.c_name, o.o_orderkey, l.l_linenumber ;
+SELECT s.s_name, p.p_brand, p.p_name, conf() FROM supplier_s s, partsupp_s ps, part_s p, nation_s n, region_s r 
+    WHERE s.s_suppkey = ps.ps_suppkey AND ps.ps_partkey = p.p_partkey AND s.s_nationkey = n.n_nationkey 
+    AND n.n_regionkey = r.r_regionkey AND r.r_regionkey = 4 AND ps.ps_supplycost >= 678 AND ps.ps_supplycost <= 1396 
+    GROUP BY p.p_brand, p.p_name, s.s_name;
