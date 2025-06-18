@@ -3,7 +3,7 @@
 This is a companion repository for the paper *ProvSQL: A General System for Keeping
 Track of the Provenance and Probability of Data*.
 
-We provide an [extended version of this paper](techreport.pdf), including in particular
+We provide an [extended version of this paper](techreport.pdf), including in particular (in appendix)
 more details about the benchmark, proofs of all results, and additional
 discussion items.
 
