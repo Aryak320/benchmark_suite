@@ -1,9 +1,20 @@
 # Benchmark Suite
 
-This contains scripts which were used to benchmark ProvSQL for overheads and against other related systems like GProM and MaybMS.
+This is a companion repository for the paper *ProvSQL: A General System for Keeping
+Track of the Provenance and Probability of Data*.
 
-Details about this benchmark are available in the [appendix of a technical
-report](techreport.pdf).
+We provide an [extended version of this paper](techreport.pdf), including in particular
+more details about the benchmark, proofs of all results, and additional
+discussion items.
+
+ProvSQL itself can be obtained [from its main repository](https://github.com/PierreSenellart/provsql/).
+
+Formal definitions for the notions introduced in the paper, as well as
+formal proofs for the Lean 4 proof assistant are available [in a separate
+repository].
+
+The rest of this repository contains instructions on how to reproduce our
+benchmark of different systems.
 
 ## Prerequisites
 
@@ -12,7 +23,8 @@ report](techreport.pdf).
 3. Install TPCH from [TPC-H](https://www.tpc.org/TPC_Documents_Current_Versions/download_programs/tools-download-request5.asp?bm_type=TPC-H&bm_vers=3.0.1&mode=CURRENT-ONLY).
 4. Install ProvSQL from  [ProvSQL](https://github.com/PierreSenellart/provsql.git).
 5. Install GProM from [GProM](https://github.com/IITDBGroup/gprom.git).
-6. MayBMS comes preinstalled in this [Ubuntu VM](https://pierre.senellart.com/tmp/maybms.ova) which can be used with ssh for running the benchmarking scripts that.
+6. MayBMS can be obtained from [MayBMS](https://maybms.sourceforge.net/); note that it needs to be installed within a VM for an older version of Linux; we used Ubuntu 10.
+
 ## Navigating through the repo
 
 1. Scripts are classified into broadly three groups of experiments:
