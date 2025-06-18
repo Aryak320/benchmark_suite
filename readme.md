@@ -11,7 +11,7 @@ ProvSQL itself can be obtained [from its main repository](https://github.com/Pie
 
 Formal definitions for the notions introduced in the paper, as well as
 formal proofs for the Lean 4 proof assistant are available [in a separate
-repository].
+repository](https://github.com/PierreSenellart/provenance-lean/).
 
 The rest of this repository contains instructions on how to reproduce our
 benchmark of different systems.
