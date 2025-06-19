@@ -1,2 +1,0 @@
-SELECT  c.c_name, o.o_orderkey, l.l_linenumber,conf() FROM customer_s c, orders_s o, lineitem_s l 
-WHERE c.c_custkey = o.o_custkey AND o.o_orderkey = l.l_orderkey AND o.o_totalprice >= 91123 AND o.o_totalprice <= 110058 GROUP BY c.c_name, o.o_orderkey, l.l_linenumber ;
