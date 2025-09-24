@@ -6,18 +6,19 @@ plotly.io.kaleido.scope.mathjax = None
 df = pd.read_csv('indexing.csv')
 
 categories = [
-    "Without<br>provenance", "ProvSQL<br>(Circuit)", "ProvSQL<br>(Why(X))", "GProM", "GProM<br>(HAS PROVENANCE())"
+    "Without<br>provenance", "ProvSQL<br>(Circuit)", "ProvSQL<br>(Why(X))", "GProM", "GProM<br>(HAS PROVENANCE())", "GProM*"
 ]
 full_labels = [
     "Baseline (No provenance)",
     "Circuit computation (ProvSQL)",
     "Why-semiring (ProvSQL)",
     "GProM",
-    "GProM (HAS PROVENANCE())"
+    "GProM (HAS PROVENANCE())",
+    "GProM *"
 ]
 
-indexed = [df['noprov_i'][0], df['prov_i'][0], df['why_i'][0], df['gprom_i'][0], df['gprom_has_i'][0]]
-non_indexed = [df['noprov'][0], df['prov'][0], df['why'][0], df['gprom'][0], df['gprom_has'][0]]
+indexed = [df['noprov_i'][0], df['prov_i'][0], df['why_i'][0], df['gprom_i'][0], df['gprom_has_i'][0],df['gprom_rw_i'][0]]
+non_indexed = [df['noprov'][0], df['prov'][0], df['why'][0], df['gprom'][0], df['gprom_has'][0],df['gprom_rw'][0]]
 
 indexed_display = [800 if v >= 3000 else v for v in indexed]
 non_indexed_display = [800 if v >= 3000 else v for v in non_indexed]
