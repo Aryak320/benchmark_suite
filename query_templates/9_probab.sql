@@ -35,4 +35,4 @@ group by
 order by
 	nation,
 	o_year desc
-limit 1) t;
+) t;

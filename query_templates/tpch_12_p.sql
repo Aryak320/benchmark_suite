@@ -1,6 +1,6 @@
 SET search_path to public, provsql ;
 SELECT *, probability_evaluate(provenance()) FROM (
-select DISTINCT
+select
     l_shipmode  
 from  
     orders,  

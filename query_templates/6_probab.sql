@@ -4,7 +4,7 @@
 SET search_path to public, provsql ;
 SELECT *, probability_evaluate(provenance()) FROM (
 select
-	l_orderkey
+	sum(l_extendedprice * l_discount) as revenue
 from
 	lineitem
 where
@@ -12,4 +12,4 @@ where
 	and l_shipdate < date '1995-01-01' + interval '1' year
 	and l_discount between 0.09 - 0.01 and 0.09 + 0.01
 	and l_quantity < 24
-limit 100) t;
+) t;

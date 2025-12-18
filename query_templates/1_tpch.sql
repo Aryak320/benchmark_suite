@@ -9,7 +9,6 @@ select
 	avg(l_extendedprice) as avg_price,
 	avg(l_discount) as avg_disc,
 	count(*) as count_order
-	-
 from
 	lineitem
 where
@@ -20,5 +19,5 @@ group by
 order by
 	l_returnflag,
 	l_linestatus
-limit 1;
+;
 

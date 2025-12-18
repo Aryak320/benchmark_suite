@@ -24,7 +24,7 @@ def process_sql_file(input_file):
                 query = query.rstrip(' ;')
                 
                 # Wrap the query
-                wrapped_query = f"SELECT *, counting(provenance(), 'counting_map') FROM ( {query} )t;\n"
+                wrapped_query = f"SELECT *, sr_counting(provenance(), 'counting_map') FROM ( {query} )t;\n"
                 
                 # Write the wrapped query to the output file
                 f_out.write(wrapped_query)

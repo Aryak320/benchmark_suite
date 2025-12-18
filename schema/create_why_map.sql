@@ -16,10 +16,10 @@ UNION
 SELECT * FROM region_why_map;
 
 
-ALTER TABLE why_map            
-ALTER COLUMN value TYPE varchar;
+-- ALTER TABLE why_map            
+-- ALTER COLUMN value TYPE varchar;
 
-UPDATE why_map set value = '{"{' || value || '}"}';  
+-- UPDATE why_map set value = '{"{' || value || '}"}';  
 
 ALTER TABLE why_map ADD PRIMARY KEY (provenance);
 

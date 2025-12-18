@@ -4,9 +4,9 @@ select
 	l_orderkey
 	
 from
-	customer,
-	orders,
-	lineitem
+	customer has provenance(prov),
+	orders has provenance(prov),
+	lineitem has provenance(prov)
 where
 	c_mktsegment = 'BUILDING'
 	and c_custkey = o_custkey

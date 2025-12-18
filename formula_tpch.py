@@ -24,7 +24,7 @@ def process_sql_file(input_file):
                 query = query.rstrip(' ;')
                 
                 # Wrap the query
-                wrapped_query = f"SELECT *, formula(provenance(), 'formula_map') FROM ( {query} )t;\n"
+                wrapped_query = f"SELECT *, sr_formula(provenance(), 'formula_map') FROM ( {query} )t;\n"
                 
                 # Write the wrapped query to the output file
                 f_out.write(wrapped_query)

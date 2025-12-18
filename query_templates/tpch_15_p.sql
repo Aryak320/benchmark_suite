@@ -1,6 +1,6 @@
 SET search_path to public, provsql ;
 SELECT *, probability_evaluate(provenance()) FROM (
-select DISTINCT
+select
     s_suppkey,  
     s_name,  
     s_address,  

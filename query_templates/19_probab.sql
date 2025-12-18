@@ -4,7 +4,7 @@
 SET search_path to public, provsql ;
 SELECT *, probability_evaluate(provenance()) FROM (
 select
-	*
+	sum(l_extendedprice* (1 - l_discount)) as revenue
 from
 	lineitem,
 	part
@@ -38,4 +38,4 @@ where
 		and l_shipmode in ('AIR', 'AIR REG')
 		and l_shipinstruct = 'DELIVER IN PERSON'
 	)
-limit 1)t;
+)t;

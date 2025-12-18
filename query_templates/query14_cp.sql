@@ -1,7 +1,5 @@
 SET search_path to public, provsql ;
 
-SELECT *, probability_evaluate(provenance()) FROM ( 
-    SELECT s.s_name, p.p_brand, p.p_name FROM supplier s, partsupp ps, part p, nation n, region r 
-    WHERE s.s_suppkey = ps.ps_suppkey AND ps.ps_partkey = p.p_partkey AND s.s_nationkey = n.n_nationkey 
-    AND n.n_regionkey = r.r_regionkey AND r.r_regionkey = 4 AND ps.ps_supplycost >= 678 AND ps.ps_supplycost <= 1396 
-    GROUP BY p.p_brand, p.p_name, s.s_name )t;
+SELECT *, probability_evaluate(provenance()) FROM 
+(  SELECT DISTINCT c.c_name, o.o_orderkey, l.l_linenumber FROM customer c, orders o, lineitem l 
+WHERE c.c_custkey = o.o_custkey AND o.o_orderkey = l.l_orderkey AND o.o_totalprice >= 91123 AND o.o_totalprice <= 110058 )t;

@@ -4,7 +4,7 @@ define C=TEXT({"TIN",1},{"NICKEL",1},{"BRASS",1},{"STEEL",1},{"COPPER",1});
 define SIZE=RANDOM(1,50,uniform);
 PROVENANCE OF(
 SELECT part.p_name, part.p_brand
-FROM part
+FROM part has provenance(prov)
 WHERE p_type = '[A] [B] [C]'
 AND p_size = [SIZE]
 GROUP BY part.p_brand, part.p_name);
