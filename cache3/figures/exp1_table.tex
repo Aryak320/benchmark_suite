@@ -1,0 +1,22 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{4}{c}{time (s)} & \multicolumn{2}{c}{hits/misses} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}
+& off & on & fold & optimized & on & optimized \\
+\midrule
+\texttt{Q1} & 300.000 & 300.000 & 5.764 & \textbf{5.753} & 0/1 & 0/0 \\
+\texttt{Q3} & 6.881 & \textbf{0.433} & 3.875 & 0.497 & 94/6 & 41/5 \\
+\texttt{Q4} & 21.670 & 15.521 & 164.911 & \textbf{0.532} & 621/5 & 1913/5 \\
+\texttt{Q5} & 0.864 & 0.866 & \textbf{0.862} & 0.896 & 0/5 & 0/5 \\
+\texttt{Q6} & 0.168 & 0.116 & 0.049 & \textbf{0.048} & 0/1 & 0/0 \\
+\texttt{Q7} & 86.621 & 86.055 & \textbf{85.819} & 86.793 & 0/4 & 0/4 \\
+\texttt{Q9} & \textbf{11.513} & 11.521 & 11.987 & 12.344 & 0/100 & 0/100 \\
+\texttt{Q10} & 6.925 & 0.243 & \textbf{0.198} & 0.213 & 89/3 & 0/2 \\
+\texttt{Q12} & 4.388 & 1.142 & 3.736 & \textbf{0.154} & 1464/2 & 41/1 \\
+\texttt{Q14} & 0.794 & 0.117 & \textbf{0.027} & 0.028 & 9/1 & 0/0 \\
+\texttt{Q19} & 0.105 & \textbf{0.039} & 0.040 & 0.039 & 1/0 & 0/0 \\
+\midrule
+All 11 & 439.928 & 416.053 & 277.267 & \textbf{107.299} & 2278/128 & 1995/122 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2mm}{\small off: cache and folding off; on: cache only; fold: folding only; optimized: cache and folding. Bold: the smallest time of the row.\par}

@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrrrr}
+\toprule
+ & & \multicolumn{3}{c}{on} & \multicolumn{3}{c}{optimized} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Query & tuples & hits & misses & speed-up & hits & misses & speed-up \\
+\midrule
+\texttt{Q3} & 2,000 & 1,994 & 6 & 137.5$\times$ & 946 & 5 & 155.1$\times$ \\
+\texttt{Q4} & 100 & 12,828 & 100 & 1.4$\times$ & 39,077 & 5 & 198.7$\times$ \\
+\texttt{Q10} & 1,784 & 1,780 & 4 & 132.6$\times$ & 39 & 3 & 151.7$\times$ \\
+\texttt{Q12} & 40 & 29,271 & 32 & 4.6$\times$ & 889 & 1 & 61.1$\times$ \\
+\midrule
+All 4 & 3,924 & 45,872 & 142 & 2.3$\times$ & 40,951 & 14 & 148.8$\times$ \\
+\bottomrule
+\end{tabular}
+\par\vspace{2mm}{\small tuples: result tuples of the 20 variants of the query; hits and misses: average of 10 streams; speed-up: \texttt{Qi*}$_{\text{off}}$ divided by \texttt{Qi*} in the mode of the column.\par}

@@ -1,0 +1,221 @@
+query,variant,file,source,constants
+q1,1,q1_v01.sql,original,
+q1,2,q1_v02.sql,stream 2,interval '117' day -> interval '62' day
+q1,3,q1_v03.sql,stream 3,interval '117' day -> interval '119' day
+q1,4,q1_v04.sql,stream 4,interval '117' day -> interval '63' day
+q1,5,q1_v05.sql,stream 5,interval '117' day -> interval '73' day
+q1,6,q1_v06.sql,stream 6,interval '117' day -> interval '69' day
+q1,7,q1_v07.sql,stream 7,interval '117' day -> interval '87' day
+q1,8,q1_v08.sql,stream 8,interval '117' day -> interval '90' day
+q1,9,q1_v09.sql,stream 9,interval '117' day -> interval '61' day
+q1,10,q1_v10.sql,stream 10,interval '117' day -> interval '88' day
+q1,11,q1_v11.sql,stream 11,interval '117' day -> interval '83' day
+q1,12,q1_v12.sql,stream 12,interval '117' day -> interval '111' day
+q1,13,q1_v13.sql,stream 13,interval '117' day -> interval '109' day
+q1,14,q1_v14.sql,stream 14,interval '117' day -> interval '106' day
+q1,15,q1_v15.sql,stream 15,interval '117' day -> interval '105' day
+q1,16,q1_v16.sql,stream 16,interval '117' day -> interval '98' day
+q1,17,q1_v17.sql,stream 17,interval '117' day -> interval '107' day
+q1,18,q1_v18.sql,stream 18,interval '117' day -> interval '82' day
+q1,19,q1_v19.sql,stream 19,interval '117' day -> interval '77' day
+q1,20,q1_v20.sql,stream 20,interval '117' day -> interval '78' day
+q3,1,q3_v01.sql,original,
+q3,2,q3_v02.sql,stream 2,"'BUILDING' -> 'AUTOMOBILE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-08', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-08', 'YYYY-MM-DD')"
+q3,3,q3_v03.sql,stream 3,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-21', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-21', 'YYYY-MM-DD')"
+q3,4,q3_v04.sql,stream 4,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-23', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-23', 'YYYY-MM-DD')"
+q3,5,q3_v05.sql,stream 5,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-04', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-04', 'YYYY-MM-DD')"
+q3,6,q3_v06.sql,stream 6,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-11', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-11', 'YYYY-MM-DD')"
+q3,7,q3_v07.sql,stream 7,"'BUILDING' -> 'BUILDING' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-05', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-05', 'YYYY-MM-DD')"
+q3,8,q3_v08.sql,stream 8,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-24', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-24', 'YYYY-MM-DD')"
+q3,9,q3_v09.sql,stream 9,"'BUILDING' -> 'AUTOMOBILE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-22', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-22', 'YYYY-MM-DD')"
+q3,10,q3_v10.sql,stream 10,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-11', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-11', 'YYYY-MM-DD')"
+q3,11,q3_v11.sql,stream 11,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-08', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-08', 'YYYY-MM-DD')"
+q3,12,q3_v12.sql,stream 12,"'BUILDING' -> 'BUILDING' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-20', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-20', 'YYYY-MM-DD')"
+q3,13,q3_v13.sql,stream 13,"'BUILDING' -> 'BUILDING' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-18', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-18', 'YYYY-MM-DD')"
+q3,14,q3_v14.sql,stream 14,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-01', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-01', 'YYYY-MM-DD')"
+q3,15,q3_v15.sql,stream 15,"'BUILDING' -> 'BUILDING' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-30', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-30', 'YYYY-MM-DD')"
+q3,16,q3_v16.sql,stream 16,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-22', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-22', 'YYYY-MM-DD')"
+q3,17,q3_v17.sql,stream 17,"'BUILDING' -> 'FURNITURE' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-24', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-24', 'YYYY-MM-DD')"
+q3,18,q3_v18.sql,stream 18,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-01', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-01', 'YYYY-MM-DD')"
+q3,19,q3_v19.sql,stream 19,"'BUILDING' -> 'BUILDING' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-09', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-09', 'YYYY-MM-DD')"
+q3,20,q3_v20.sql,stream 20,"'BUILDING' -> 'HOUSEHOLD' ; TO_DATE('1995-03-15', 'YYYY-MM-DD') -> TO_DATE('1995-03-05', 'YYYY-MM-DD') ; TO_DATE('1995-05-15', 'YYYY-MM-DD') -> TO_DATE('1995-05-05', 'YYYY-MM-DD')"
+q4,1,q4_v01.sql,original,
+q4,2,q4_v02.sql,stream 2,date '1993-07-01' -> date '1995-02-01' ; date '1993-10-01' -> date '1995-05-01'
+q4,3,q4_v03.sql,stream 3,date '1993-07-01' -> date '1993-01-01' ; date '1993-10-01' -> date '1993-04-01'
+q4,4,q4_v04.sql,stream 4,date '1993-07-01' -> date '1994-01-01' ; date '1993-10-01' -> date '1994-04-01'
+q4,5,q4_v05.sql,stream 5,date '1993-07-01' -> date '1995-11-01' ; date '1993-10-01' -> date '1996-02-01'
+q4,6,q4_v06.sql,stream 6,date '1993-07-01' -> date '1997-08-01' ; date '1993-10-01' -> date '1997-11-01'
+q4,7,q4_v07.sql,stream 7,date '1993-07-01' -> date '1997-10-01' ; date '1993-10-01' -> date '1998-01-01'
+q4,8,q4_v08.sql,stream 8,date '1993-07-01' -> date '1995-04-01' ; date '1993-10-01' -> date '1995-07-01'
+q4,9,q4_v09.sql,stream 9,date '1993-07-01' -> date '1994-04-01' ; date '1993-10-01' -> date '1994-07-01'
+q4,10,q4_v10.sql,stream 11,date '1993-07-01' -> date '1996-10-01' ; date '1993-10-01' -> date '1997-01-01'
+q4,11,q4_v11.sql,stream 12,date '1993-07-01' -> date '1994-05-01' ; date '1993-10-01' -> date '1994-08-01'
+q4,12,q4_v12.sql,stream 13,date '1993-07-01' -> date '1997-05-01' ; date '1993-10-01' -> date '1997-08-01'
+q4,13,q4_v13.sql,stream 14,date '1993-07-01' -> date '1994-07-01' ; date '1993-10-01' -> date '1994-10-01'
+q4,14,q4_v14.sql,stream 15,date '1993-07-01' -> date '1995-03-01' ; date '1993-10-01' -> date '1995-06-01'
+q4,15,q4_v15.sql,stream 16,date '1993-07-01' -> date '1993-02-01' ; date '1993-10-01' -> date '1993-05-01'
+q4,16,q4_v16.sql,stream 17,date '1993-07-01' -> date '1994-10-01' ; date '1993-10-01' -> date '1995-01-01'
+q4,17,q4_v17.sql,stream 18,date '1993-07-01' -> date '1994-09-01' ; date '1993-10-01' -> date '1994-12-01'
+q4,18,q4_v18.sql,stream 20,date '1993-07-01' -> date '1994-06-01' ; date '1993-10-01' -> date '1994-09-01'
+q4,19,q4_v19.sql,stream 22,date '1993-07-01' -> date '1996-01-01' ; date '1993-10-01' -> date '1996-04-01'
+q4,20,q4_v20.sql,stream 23,date '1993-07-01' -> date '1995-08-01' ; date '1993-10-01' -> date '1995-11-01'
+q5,1,q5_v01.sql,original,
+q5,2,q5_v02.sql,stream 2,'AMERICA' -> 'AFRICA' ; date '1995-01-01' -> date '1996-01-01'
+q5,3,q5_v03.sql,stream 3,'AMERICA' -> 'ASIA' ; date '1995-01-01' -> date '1995-01-01'
+q5,4,q5_v04.sql,stream 4,'AMERICA' -> 'EUROPE' ; date '1995-01-01' -> date '1993-01-01'
+q5,5,q5_v05.sql,stream 5,'AMERICA' -> 'EUROPE' ; date '1995-01-01' -> date '1997-01-01'
+q5,6,q5_v06.sql,stream 6,'AMERICA' -> 'EUROPE' ; date '1995-01-01' -> date '1994-01-01'
+q5,7,q5_v07.sql,stream 7,'AMERICA' -> 'MIDDLE EAST' ; date '1995-01-01' -> date '1996-01-01'
+q5,8,q5_v08.sql,stream 8,'AMERICA' -> 'ASIA' ; date '1995-01-01' -> date '1997-01-01'
+q5,9,q5_v09.sql,stream 9,'AMERICA' -> 'MIDDLE EAST' ; date '1995-01-01' -> date '1993-01-01'
+q5,10,q5_v10.sql,stream 10,'AMERICA' -> 'AMERICA' ; date '1995-01-01' -> date '1994-01-01'
+q5,11,q5_v11.sql,stream 11,'AMERICA' -> 'ASIA' ; date '1995-01-01' -> date '1996-01-01'
+q5,12,q5_v12.sql,stream 12,'AMERICA' -> 'AMERICA' ; date '1995-01-01' -> date '1993-01-01'
+q5,13,q5_v13.sql,stream 13,'AMERICA' -> 'AMERICA' ; date '1995-01-01' -> date '1997-01-01'
+q5,14,q5_v14.sql,stream 14,'AMERICA' -> 'EUROPE' ; date '1995-01-01' -> date '1995-01-01'
+q5,15,q5_v15.sql,stream 15,'AMERICA' -> 'EUROPE' ; date '1995-01-01' -> date '1996-01-01'
+q5,16,q5_v16.sql,stream 16,'AMERICA' -> 'ASIA' ; date '1995-01-01' -> date '1994-01-01'
+q5,17,q5_v17.sql,stream 17,'AMERICA' -> 'AFRICA' ; date '1995-01-01' -> date '1993-01-01'
+q5,18,q5_v18.sql,stream 18,'AMERICA' -> 'AFRICA' ; date '1995-01-01' -> date '1995-01-01'
+q5,19,q5_v19.sql,stream 19,'AMERICA' -> 'MIDDLE EAST' ; date '1995-01-01' -> date '1995-01-01'
+q5,20,q5_v20.sql,stream 20,'AMERICA' -> 'AFRICA' ; date '1995-01-01' -> date '1997-01-01'
+q6,1,q6_v01.sql,original,
+q6,2,q6_v02.sql,stream 2,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.08 - 0.01 and 0.08 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,3,q6_v03.sql,stream 4,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.02 - 0.01 and 0.02 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,4,q6_v04.sql,stream 5,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.06 - 0.01 and 0.06 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,5,q6_v05.sql,stream 6,date '1995-01-01' -> date '1995-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.03 - 0.01 and 0.03 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,6,q6_v06.sql,stream 7,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.04 - 0.01 and 0.04 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,7,q6_v07.sql,stream 8,date '1995-01-01' -> date '1994-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.09 - 0.01 and 0.09 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,8,q6_v08.sql,stream 9,date '1995-01-01' -> date '1995-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.04 - 0.01 and 0.04 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,9,q6_v09.sql,stream 10,date '1995-01-01' -> date '1995-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.08 - 0.01 and 0.08 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,10,q6_v10.sql,stream 11,date '1995-01-01' -> date '1996-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.03 - 0.01 and 0.03 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,11,q6_v11.sql,stream 12,date '1995-01-01' -> date '1996-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.05 - 0.01 and 0.05 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,12,q6_v12.sql,stream 13,date '1995-01-01' -> date '1995-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.06 - 0.01 and 0.06 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,13,q6_v13.sql,stream 14,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.05 - 0.01 and 0.05 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,14,q6_v14.sql,stream 15,date '1995-01-01' -> date '1996-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.06 - 0.01 and 0.06 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,15,q6_v15.sql,stream 16,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.09 - 0.01 and 0.09 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,16,q6_v16.sql,stream 19,date '1995-01-01' -> date '1995-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.07 - 0.01 and 0.07 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,17,q6_v17.sql,stream 20,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.07 - 0.01 and 0.07 + 0.01 ; l_quantity < 24 -> l_quantity < 24
+q6,18,q6_v18.sql,stream 21,date '1995-01-01' -> date '1996-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.02 - 0.01 and 0.02 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,19,q6_v19.sql,stream 22,date '1995-01-01' -> date '1996-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.04 - 0.01 and 0.04 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q6,20,q6_v20.sql,stream 23,date '1995-01-01' -> date '1997-01-01' ; 0.09 - 0.01 and 0.09 + 0.01 -> 0.02 - 0.01 and 0.02 + 0.01 ; l_quantity < 24 -> l_quantity < 25
+q7,1,q7_v01.sql,original,
+q7,2,q7_v02.sql,stream 2,'RUSSIA' -> 'MOZAMBIQUE' ; 'INDIA' -> 'IRAN'
+q7,3,q7_v03.sql,stream 3,'RUSSIA' -> 'IRAN' ; 'INDIA' -> 'BRAZIL'
+q7,4,q7_v04.sql,stream 4,'RUSSIA' -> 'JORDAN' ; 'INDIA' -> 'BRAZIL'
+q7,5,q7_v05.sql,stream 5,'RUSSIA' -> 'JAPAN' ; 'INDIA' -> 'ALGERIA'
+q7,6,q7_v06.sql,stream 6,'RUSSIA' -> 'ARGENTINA' ; 'INDIA' -> 'UNITED KINGDOM'
+q7,7,q7_v07.sql,stream 7,'RUSSIA' -> 'MOZAMBIQUE' ; 'INDIA' -> 'SAUDI ARABIA'
+q7,8,q7_v08.sql,stream 21,'RUSSIA' -> 'ROMANIA' ; 'INDIA' -> 'EGYPT'
+q7,9,q7_v09.sql,stream 9,'RUSSIA' -> 'IRAQ' ; 'INDIA' -> 'CANADA'
+q7,10,q7_v10.sql,stream 10,'RUSSIA' -> 'MOZAMBIQUE' ; 'INDIA' -> 'CHINA'
+q7,11,q7_v11.sql,stream 11,'RUSSIA' -> 'MOZAMBIQUE' ; 'INDIA' -> 'INDIA'
+q7,12,q7_v12.sql,stream 12,'RUSSIA' -> 'UNITED KINGDOM' ; 'INDIA' -> 'FRANCE'
+q7,13,q7_v13.sql,stream 13,'RUSSIA' -> 'EGYPT' ; 'INDIA' -> 'MOZAMBIQUE'
+q7,14,q7_v14.sql,stream 14,'RUSSIA' -> 'JAPAN' ; 'INDIA' -> 'MOROCCO'
+q7,15,q7_v15.sql,stream 15,'RUSSIA' -> 'IRAN' ; 'INDIA' -> 'PERU'
+q7,16,q7_v16.sql,stream 16,'RUSSIA' -> 'BRAZIL' ; 'INDIA' -> 'JORDAN'
+q7,17,q7_v17.sql,stream 17,'RUSSIA' -> 'MOROCCO' ; 'INDIA' -> 'CHINA'
+q7,18,q7_v18.sql,stream 18,'RUSSIA' -> 'ETHIOPIA' ; 'INDIA' -> 'JORDAN'
+q7,19,q7_v19.sql,stream 19,'RUSSIA' -> 'UNITED KINGDOM' ; 'INDIA' -> 'ALGERIA'
+q7,20,q7_v20.sql,stream 20,'RUSSIA' -> 'IRAN' ; 'INDIA' -> 'UNITED STATES'
+q9,1,q9_v01.sql,original,
+q9,2,q9_v02.sql,stream 2,'%orchid%' -> '%misty%'
+q9,3,q9_v03.sql,stream 3,'%orchid%' -> '%almond%'
+q9,4,q9_v04.sql,stream 4,'%orchid%' -> '%aquamarine%'
+q9,5,q9_v05.sql,stream 5,'%orchid%' -> '%brown%'
+q9,6,q9_v06.sql,stream 6,'%orchid%' -> '%peru%'
+q9,7,q9_v07.sql,stream 7,'%orchid%' -> '%white%'
+q9,8,q9_v08.sql,stream 8,'%orchid%' -> '%blue%'
+q9,9,q9_v09.sql,stream 9,'%orchid%' -> '%blush%'
+q9,10,q9_v10.sql,stream 10,'%orchid%' -> '%magenta%'
+q9,11,q9_v11.sql,stream 11,'%orchid%' -> '%chartreuse%'
+q9,12,q9_v12.sql,stream 12,'%orchid%' -> '%sienna%'
+q9,13,q9_v13.sql,stream 13,'%orchid%' -> '%violet%'
+q9,14,q9_v14.sql,stream 14,'%orchid%' -> '%orange%'
+q9,15,q9_v15.sql,stream 17,'%orchid%' -> '%coral%'
+q9,16,q9_v16.sql,stream 18,'%orchid%' -> '%ivory%'
+q9,17,q9_v17.sql,stream 19,'%orchid%' -> '%cornsilk%'
+q9,18,q9_v18.sql,stream 20,'%orchid%' -> '%drab%'
+q9,19,q9_v19.sql,stream 21,'%orchid%' -> '%rosy%'
+q9,20,q9_v20.sql,stream 23,'%orchid%' -> '%plum%'
+q10,1,q10_v01.sql,original,
+q10,2,q10_v02.sql,stream 2,date '1993-10-01' -> date '1993-05-01'
+q10,3,q10_v03.sql,stream 3,date '1993-10-01' -> date '1994-05-01'
+q10,4,q10_v04.sql,stream 4,date '1993-10-01' -> date '1994-09-01'
+q10,5,q10_v05.sql,stream 5,date '1993-10-01' -> date '1994-02-01'
+q10,6,q10_v06.sql,stream 8,date '1993-10-01' -> date '1995-01-01'
+q10,7,q10_v07.sql,stream 9,date '1993-10-01' -> date '1993-03-01'
+q10,8,q10_v08.sql,stream 10,date '1993-10-01' -> date '1994-01-01'
+q10,9,q10_v09.sql,stream 12,date '1993-10-01' -> date '1993-06-01'
+q10,10,q10_v10.sql,stream 14,date '1993-10-01' -> date '1994-10-01'
+q10,11,q10_v11.sql,stream 16,date '1993-10-01' -> date '1994-04-01'
+q10,12,q10_v12.sql,stream 18,date '1993-10-01' -> date '1993-04-01'
+q10,13,q10_v13.sql,stream 19,date '1993-10-01' -> date '1994-06-01'
+q10,14,q10_v14.sql,stream 21,date '1993-10-01' -> date '1994-07-01'
+q10,15,q10_v15.sql,stream 24,date '1993-10-01' -> date '1994-11-01'
+q10,16,q10_v16.sql,stream 25,date '1993-10-01' -> date '1993-02-01'
+q10,17,q10_v17.sql,stream 29,date '1993-10-01' -> date '1993-11-01'
+q10,18,q10_v18.sql,stream 36,date '1993-10-01' -> date '1993-07-01'
+q10,19,q10_v19.sql,stream 44,date '1993-10-01' -> date '1993-12-01'
+q10,20,q10_v20.sql,stream 46,date '1993-10-01' -> date '1994-12-01'
+q12,1,q12_v01.sql,original,
+q12,2,q12_v02.sql,stream 2,"('TRUCK', 'AIR') -> ('TRUCK', 'RAIL') ; date '1997-01-01' -> date '1994-01-01'"
+q12,3,q12_v03.sql,stream 3,"('TRUCK', 'AIR') -> ('SHIP', 'TRUCK') ; date '1997-01-01' -> date '1995-01-01'"
+q12,4,q12_v04.sql,stream 4,"('TRUCK', 'AIR') -> ('TRUCK', 'RAIL') ; date '1997-01-01' -> date '1997-01-01'"
+q12,5,q12_v05.sql,stream 5,"('TRUCK', 'AIR') -> ('TRUCK', 'MAIL') ; date '1997-01-01' -> date '1996-01-01'"
+q12,6,q12_v06.sql,stream 6,"('TRUCK', 'AIR') -> ('MAIL', 'SHIP') ; date '1997-01-01' -> date '1994-01-01'"
+q12,7,q12_v07.sql,stream 7,"('TRUCK', 'AIR') -> ('FOB', 'RAIL') ; date '1997-01-01' -> date '1995-01-01'"
+q12,8,q12_v08.sql,stream 8,"('TRUCK', 'AIR') -> ('TRUCK', 'REG AIR') ; date '1997-01-01' -> date '1997-01-01'"
+q12,9,q12_v09.sql,stream 9,"('TRUCK', 'AIR') -> ('REG AIR', 'SHIP') ; date '1997-01-01' -> date '1997-01-01'"
+q12,10,q12_v10.sql,stream 10,"('TRUCK', 'AIR') -> ('TRUCK', 'FOB') ; date '1997-01-01' -> date '1996-01-01'"
+q12,11,q12_v11.sql,stream 11,"('TRUCK', 'AIR') -> ('AIR', 'SHIP') ; date '1997-01-01' -> date '1995-01-01'"
+q12,12,q12_v12.sql,stream 12,"('TRUCK', 'AIR') -> ('FOB', 'AIR') ; date '1997-01-01' -> date '1993-01-01'"
+q12,13,q12_v13.sql,stream 14,"('TRUCK', 'AIR') -> ('REG AIR', 'TRUCK') ; date '1997-01-01' -> date '1997-01-01'"
+q12,14,q12_v14.sql,stream 15,"('TRUCK', 'AIR') -> ('REG AIR', 'AIR') ; date '1997-01-01' -> date '1993-01-01'"
+q12,15,q12_v15.sql,stream 16,"('TRUCK', 'AIR') -> ('SHIP', 'REG AIR') ; date '1997-01-01' -> date '1994-01-01'"
+q12,16,q12_v16.sql,stream 17,"('TRUCK', 'AIR') -> ('RAIL', 'MAIL') ; date '1997-01-01' -> date '1996-01-01'"
+q12,17,q12_v17.sql,stream 18,"('TRUCK', 'AIR') -> ('MAIL', 'FOB') ; date '1997-01-01' -> date '1995-01-01'"
+q12,18,q12_v18.sql,stream 21,"('TRUCK', 'AIR') -> ('AIR', 'FOB') ; date '1997-01-01' -> date '1995-01-01'"
+q12,19,q12_v19.sql,stream 22,"('TRUCK', 'AIR') -> ('SHIP', 'MAIL') ; date '1997-01-01' -> date '1994-01-01'"
+q12,20,q12_v20.sql,stream 23,"('TRUCK', 'AIR') -> ('FOB', 'MAIL') ; date '1997-01-01' -> date '1993-01-01'"
+q14,1,q14_v01.sql,original,
+q14,2,q14_v02.sql,stream 2,date '1995-09-01' -> date '1997-09-01'
+q14,3,q14_v03.sql,stream 3,date '1995-09-01' -> date '1996-12-01'
+q14,4,q14_v04.sql,stream 4,date '1995-09-01' -> date '1993-04-01'
+q14,5,q14_v05.sql,stream 5,date '1995-09-01' -> date '1997-08-01'
+q14,6,q14_v06.sql,stream 6,date '1995-09-01' -> date '1997-05-01'
+q14,7,q14_v07.sql,stream 7,date '1995-09-01' -> date '1993-12-01'
+q14,8,q14_v08.sql,stream 8,date '1995-09-01' -> date '1996-07-01'
+q14,9,q14_v09.sql,stream 9,date '1995-09-01' -> date '1995-10-01'
+q14,10,q14_v10.sql,stream 10,date '1995-09-01' -> date '1995-01-01'
+q14,11,q14_v11.sql,stream 11,date '1995-09-01' -> date '1997-10-01'
+q14,12,q14_v12.sql,stream 12,date '1995-09-01' -> date '1996-03-01'
+q14,13,q14_v13.sql,stream 13,date '1995-09-01' -> date '1997-04-01'
+q14,14,q14_v14.sql,stream 14,date '1995-09-01' -> date '1993-03-01'
+q14,15,q14_v15.sql,stream 15,date '1995-09-01' -> date '1993-05-01'
+q14,16,q14_v16.sql,stream 16,date '1995-09-01' -> date '1993-02-01'
+q14,17,q14_v17.sql,stream 20,date '1995-09-01' -> date '1995-12-01'
+q14,18,q14_v18.sql,stream 21,date '1995-09-01' -> date '1996-04-01'
+q14,19,q14_v19.sql,stream 22,date '1995-09-01' -> date '1994-11-01'
+q14,20,q14_v20.sql,stream 23,date '1995-09-01' -> date '1993-10-01'
+q19,1,q19_v01.sql,original,
+q19,2,q19_v02.sql,stream 2,'Brand#54' -> 'Brand#52' ; 'Brand#51' -> 'Brand#55' ; 'Brand#21' -> 'Brand#44' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 6 and l_quantity <= 6 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 12 and l_quantity <= 12 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 26 and l_quantity <= 26 + 10
+q19,3,q19_v03.sql,stream 3,'Brand#54' -> 'Brand#31' ; 'Brand#51' -> 'Brand#22' ; 'Brand#21' -> 'Brand#42' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 6 and l_quantity <= 6 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 19 and l_quantity <= 19 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 28 and l_quantity <= 28 + 10
+q19,4,q19_v04.sql,stream 4,'Brand#54' -> 'Brand#31' ; 'Brand#51' -> 'Brand#51' ; 'Brand#21' -> 'Brand#43' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 1 and l_quantity <= 1 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 11 and l_quantity <= 11 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 22 and l_quantity <= 22 + 10
+q19,5,q19_v05.sql,stream 5,'Brand#54' -> 'Brand#35' ; 'Brand#51' -> 'Brand#51' ; 'Brand#21' -> 'Brand#41' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 5 and l_quantity <= 5 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 18 and l_quantity <= 18 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 29 and l_quantity <= 29 + 10
+q19,6,q19_v06.sql,stream 6,'Brand#54' -> 'Brand#14' ; 'Brand#51' -> 'Brand#33' ; 'Brand#21' -> 'Brand#13' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 4 and l_quantity <= 4 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 16 and l_quantity <= 16 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 27 and l_quantity <= 27 + 10
+q19,7,q19_v07.sql,stream 7,'Brand#54' -> 'Brand#15' ; 'Brand#51' -> 'Brand#22' ; 'Brand#21' -> 'Brand#21' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 1 and l_quantity <= 1 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 17 and l_quantity <= 17 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 25 and l_quantity <= 25 + 10
+q19,8,q19_v08.sql,stream 8,'Brand#54' -> 'Brand#14' ; 'Brand#51' -> 'Brand#41' ; 'Brand#21' -> 'Brand#35' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 5 and l_quantity <= 5 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 20 and l_quantity <= 20 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 26 and l_quantity <= 26 + 10
+q19,9,q19_v09.sql,stream 9,'Brand#54' -> 'Brand#13' ; 'Brand#51' -> 'Brand#53' ; 'Brand#21' -> 'Brand#31' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 6 and l_quantity <= 6 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 13 and l_quantity <= 13 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 28 and l_quantity <= 28 + 10
+q19,10,q19_v10.sql,stream 10,'Brand#54' -> 'Brand#53' ; 'Brand#51' -> 'Brand#52' ; 'Brand#21' -> 'Brand#11' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 9 and l_quantity <= 9 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 11 and l_quantity <= 11 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 23 and l_quantity <= 23 + 10
+q19,11,q19_v11.sql,stream 11,'Brand#54' -> 'Brand#51' ; 'Brand#51' -> 'Brand#51' ; 'Brand#21' -> 'Brand#43' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 3 and l_quantity <= 3 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 13 and l_quantity <= 13 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 22 and l_quantity <= 22 + 10
+q19,12,q19_v12.sql,stream 12,'Brand#54' -> 'Brand#14' ; 'Brand#51' -> 'Brand#25' ; 'Brand#21' -> 'Brand#11' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 3 and l_quantity <= 3 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 19 and l_quantity <= 19 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 30 and l_quantity <= 30 + 10
+q19,13,q19_v13.sql,stream 13,'Brand#54' -> 'Brand#22' ; 'Brand#51' -> 'Brand#25' ; 'Brand#21' -> 'Brand#21' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 2 and l_quantity <= 2 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 16 and l_quantity <= 16 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 26 and l_quantity <= 26 + 10
+q19,14,q19_v14.sql,stream 14,'Brand#54' -> 'Brand#32' ; 'Brand#51' -> 'Brand#55' ; 'Brand#21' -> 'Brand#35' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 4 and l_quantity <= 4 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 13 and l_quantity <= 13 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 26 and l_quantity <= 26 + 10
+q19,15,q19_v15.sql,stream 15,'Brand#54' -> 'Brand#31' ; 'Brand#51' -> 'Brand#55' ; 'Brand#21' -> 'Brand#33' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 3 and l_quantity <= 3 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 14 and l_quantity <= 14 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 21 and l_quantity <= 21 + 10
+q19,16,q19_v16.sql,stream 16,'Brand#54' -> 'Brand#41' ; 'Brand#51' -> 'Brand#44' ; 'Brand#21' -> 'Brand#23' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 8 and l_quantity <= 8 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 13 and l_quantity <= 13 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 20 and l_quantity <= 20 + 10
+q19,17,q19_v17.sql,stream 17,'Brand#54' -> 'Brand#13' ; 'Brand#51' -> 'Brand#51' ; 'Brand#21' -> 'Brand#54' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 1 and l_quantity <= 1 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 10 and l_quantity <= 10 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 28 and l_quantity <= 28 + 10
+q19,18,q19_v18.sql,stream 18,'Brand#54' -> 'Brand#34' ; 'Brand#51' -> 'Brand#22' ; 'Brand#21' -> 'Brand#15' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 6 and l_quantity <= 6 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 16 and l_quantity <= 16 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 26 and l_quantity <= 26 + 10
+q19,19,q19_v19.sql,stream 19,'Brand#54' -> 'Brand#31' ; 'Brand#51' -> 'Brand#23' ; 'Brand#21' -> 'Brand#45' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 4 and l_quantity <= 4 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 10 and l_quantity <= 10 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 28 and l_quantity <= 28 + 10
+q19,20,q19_v20.sql,stream 20,'Brand#54' -> 'Brand#54' ; 'Brand#51' -> 'Brand#44' ; 'Brand#21' -> 'Brand#45' ; l_quantity >= 4 and l_quantity <= 4 + 10 -> l_quantity >= 10 and l_quantity <= 10 + 10 ; l_quantity >= 11 and l_quantity <= 11 + 10 -> l_quantity >= 20 and l_quantity <= 20 + 10 ; l_quantity >= 28 and l_quantity <= 28 + 10 -> l_quantity >= 29 and l_quantity <= 29 + 10

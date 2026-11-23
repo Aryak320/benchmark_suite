@@ -1,0 +1,554 @@
+
+== mode on: warm-up
+  on warmup 0 1/10 q3 v1: ok, 100 tuples, 0.621 s, hits 94, misses 6, evictions 0
+  on warmup 0 2/10 q5 v1: ok, 5 tuples, 1.218 s, hits 0, misses 5, evictions 0
+  on warmup 0 3/10 q6 v1: ok, 1 tuples, 0.752 s, hits 0, misses 1, evictions 0
+  on warmup 0 4/10 q7 v1: ok, 4 tuples, 86.634 s, hits 0, misses 4, evictions 0
+  on warmup 0 5/10 q9 v1: ok, 100 tuples, 10.620 s, hits 0, misses 100, evictions 0
+  on warmup 0 6/10 q10 v1: ok, 92 tuples, 0.227 s, hits 89, misses 3, evictions 0
+  on warmup 0 7/10 q14 v1: ok, 10 tuples, 0.094 s, hits 9, misses 1, evictions 0
+  on warmup 0 8/10 q19 v1: ok, 1 tuples, 0.037 s, hits 1, misses 0, evictions 0
+  on warmup 0 9/10 q12 v1: ok, 2 tuples, 1.175 s, hits 1464, misses 2, evictions 0
+  on warmup 0 10/10 q4 v1: ok, 5 tuples, 15.663 s, hits 621, misses 5, evictions 0
+
+== mode on: round 1 of 10
+  on measured 1 1/11 q3 v1: ok, 100 tuples, 0.294 s, hits 94, misses 6, evictions 0
+  on measured 1 2/11 q5 v1: ok, 5 tuples, 0.754 s, hits 0, misses 5, evictions 0
+  on measured 1 3/11 q6 v1: ok, 1 tuples, 0.095 s, hits 0, misses 1, evictions 0
+  on measured 1 4/11 q7 v1: ok, 4 tuples, 85.900 s, hits 0, misses 4, evictions 0
+  on measured 1 5/11 q9 v1: ok, 100 tuples, 9.775 s, hits 0, misses 100, evictions 0
+  on measured 1 6/11 q10 v1: ok, 92 tuples, 0.170 s, hits 89, misses 3, evictions 0
+  on measured 1 7/11 q14 v1: ok, 10 tuples, 0.091 s, hits 9, misses 1, evictions 0
+  on measured 1 8/11 q19 v1: ok, 1 tuples, 0.036 s, hits 1, misses 0, evictions 0
+  on measured 1 9/11 q12 v1: ok, 2 tuples, 1.102 s, hits 1464, misses 2, evictions 0
+  on measured 1 10/11 q4 v1: ok, 5 tuples, 15.539 s, hits 621, misses 5, evictions 0
+  on measured 1 11/11 q1 v1: timeout, 0 tuples, 300.169 s, hits 0, misses 1, evictions 0
+
+== mode on: round 2 of 10
+  on measured 2 1/10 q3 v1: ok, 100 tuples, 0.387 s, hits 94, misses 6, evictions 0
+  on measured 2 2/10 q5 v1: ok, 5 tuples, 0.841 s, hits 0, misses 5, evictions 0
+  on measured 2 3/10 q6 v1: ok, 1 tuples, 0.123 s, hits 0, misses 1, evictions 0
+  on measured 2 4/10 q7 v1: ok, 4 tuples, 85.908 s, hits 0, misses 4, evictions 0
+  on measured 2 5/10 q9 v1: ok, 100 tuples, 12.223 s, hits 0, misses 100, evictions 0
+  on measured 2 6/10 q10 v1: ok, 92 tuples, 0.294 s, hits 89, misses 3, evictions 0
+  on measured 2 7/10 q14 v1: ok, 10 tuples, 0.140 s, hits 9, misses 1, evictions 0
+  on measured 2 8/10 q19 v1: ok, 1 tuples, 0.040 s, hits 1, misses 0, evictions 0
+  on measured 2 9/10 q12 v1: ok, 2 tuples, 1.085 s, hits 1464, misses 2, evictions 0
+  on measured 2 10/10 q4 v1: ok, 5 tuples, 15.580 s, hits 621, misses 5, evictions 0
+
+== mode on: round 3 of 10
+  on measured 3 1/10 q3 v1: ok, 100 tuples, 0.454 s, hits 94, misses 6, evictions 0
+  on measured 3 2/10 q5 v1: ok, 5 tuples, 0.972 s, hits 0, misses 5, evictions 0
+  on measured 3 3/10 q6 v1: ok, 1 tuples, 0.146 s, hits 0, misses 1, evictions 0
+  on measured 3 4/10 q7 v1: ok, 4 tuples, 86.342 s, hits 0, misses 4, evictions 0
+  on measured 3 5/10 q9 v1: ok, 100 tuples, 14.039 s, hits 0, misses 100, evictions 0
+  on measured 3 6/10 q10 v1: ok, 92 tuples, 0.335 s, hits 89, misses 3, evictions 0
+  on measured 3 7/10 q14 v1: ok, 10 tuples, 0.138 s, hits 9, misses 1, evictions 0
+  on measured 3 8/10 q19 v1: ok, 1 tuples, 0.040 s, hits 1, misses 0, evictions 0
+  on measured 3 9/10 q12 v1: ok, 2 tuples, 1.252 s, hits 1464, misses 2, evictions 0
+  on measured 3 10/10 q4 v1: ok, 5 tuples, 15.570 s, hits 621, misses 5, evictions 0
+
+== mode on: round 4 of 10
+  on measured 4 1/10 q3 v1: ok, 100 tuples, 0.534 s, hits 94, misses 6, evictions 0
+  on measured 4 2/10 q5 v1: ok, 5 tuples, 0.855 s, hits 0, misses 5, evictions 0
+  on measured 4 3/10 q6 v1: ok, 1 tuples, 0.119 s, hits 0, misses 1, evictions 0
+  on measured 4 4/10 q7 v1: ok, 4 tuples, 86.099 s, hits 0, misses 4, evictions 0
+  on measured 4 5/10 q9 v1: ok, 100 tuples, 12.032 s, hits 0, misses 100, evictions 0
+  on measured 4 6/10 q10 v1: ok, 92 tuples, 0.217 s, hits 89, misses 3, evictions 0
+  on measured 4 7/10 q14 v1: ok, 10 tuples, 0.137 s, hits 9, misses 1, evictions 0
+  on measured 4 8/10 q19 v1: ok, 1 tuples, 0.040 s, hits 1, misses 0, evictions 0
+  on measured 4 9/10 q12 v1: ok, 2 tuples, 1.126 s, hits 1464, misses 2, evictions 0
+  on measured 4 10/10 q4 v1: ok, 5 tuples, 15.406 s, hits 621, misses 5, evictions 0
+
+== mode on: round 5 of 10
+  on measured 5 1/10 q3 v1: ok, 100 tuples, 0.489 s, hits 94, misses 6, evictions 0
+  on measured 5 2/10 q5 v1: ok, 5 tuples, 0.854 s, hits 0, misses 5, evictions 0
+  on measured 5 3/10 q6 v1: ok, 1 tuples, 0.123 s, hits 0, misses 1, evictions 0
+  on measured 5 4/10 q7 v1: ok, 4 tuples, 85.671 s, hits 0, misses 4, evictions 0
+  on measured 5 5/10 q9 v1: ok, 100 tuples, 12.432 s, hits 0, misses 100, evictions 0
+  on measured 5 6/10 q10 v1: ok, 92 tuples, 0.301 s, hits 89, misses 3, evictions 0
+  on measured 5 7/10 q14 v1: ok, 10 tuples, 0.110 s, hits 9, misses 1, evictions 0
+  on measured 5 8/10 q19 v1: ok, 1 tuples, 0.039 s, hits 1, misses 0, evictions 0
+  on measured 5 9/10 q12 v1: ok, 2 tuples, 1.168 s, hits 1464, misses 2, evictions 0
+  on measured 5 10/10 q4 v1: ok, 5 tuples, 15.609 s, hits 621, misses 5, evictions 0
+
+== mode on: round 6 of 10
+  on measured 6 1/10 q3 v1: ok, 100 tuples, 0.519 s, hits 94, misses 6, evictions 0
+  on measured 6 2/10 q5 v1: ok, 5 tuples, 0.983 s, hits 0, misses 5, evictions 0
+  on measured 6 3/10 q6 v1: ok, 1 tuples, 0.124 s, hits 0, misses 1, evictions 0
+  on measured 6 4/10 q7 v1: ok, 4 tuples, 86.182 s, hits 0, misses 4, evictions 0
+  on measured 6 5/10 q9 v1: ok, 100 tuples, 10.227 s, hits 0, misses 100, evictions 0
+  on measured 6 6/10 q10 v1: ok, 92 tuples, 0.195 s, hits 89, misses 3, evictions 0
+  on measured 6 7/10 q14 v1: ok, 10 tuples, 0.093 s, hits 9, misses 1, evictions 0
+  on measured 6 8/10 q19 v1: ok, 1 tuples, 0.037 s, hits 1, misses 0, evictions 0
+  on measured 6 9/10 q12 v1: ok, 2 tuples, 1.119 s, hits 1464, misses 2, evictions 0
+  on measured 6 10/10 q4 v1: ok, 5 tuples, 15.458 s, hits 621, misses 5, evictions 0
+
+== mode on: round 7 of 10
+  on measured 7 1/10 q3 v1: ok, 100 tuples, 0.354 s, hits 94, misses 6, evictions 0
+  on measured 7 2/10 q5 v1: ok, 5 tuples, 0.851 s, hits 0, misses 5, evictions 0
+  on measured 7 3/10 q6 v1: ok, 1 tuples, 0.106 s, hits 0, misses 1, evictions 0
+  on measured 7 4/10 q7 v1: ok, 4 tuples, 85.986 s, hits 0, misses 4, evictions 0
+  on measured 7 5/10 q9 v1: ok, 100 tuples, 10.031 s, hits 0, misses 100, evictions 0
+  on measured 7 6/10 q10 v1: ok, 92 tuples, 0.201 s, hits 89, misses 3, evictions 0
+  on measured 7 7/10 q14 v1: ok, 10 tuples, 0.092 s, hits 9, misses 1, evictions 0
+  on measured 7 8/10 q19 v1: ok, 1 tuples, 0.037 s, hits 1, misses 0, evictions 0
+  on measured 7 9/10 q12 v1: ok, 2 tuples, 1.145 s, hits 1464, misses 2, evictions 0
+  on measured 7 10/10 q4 v1: ok, 5 tuples, 15.492 s, hits 621, misses 5, evictions 0
+
+== mode on: round 8 of 10
+  on measured 8 1/10 q3 v1: ok, 100 tuples, 0.383 s, hits 94, misses 6, evictions 0
+  on measured 8 2/10 q5 v1: ok, 5 tuples, 0.784 s, hits 0, misses 5, evictions 0
+  on measured 8 3/10 q6 v1: ok, 1 tuples, 0.113 s, hits 0, misses 1, evictions 0
+  on measured 8 4/10 q7 v1: ok, 4 tuples, 86.104 s, hits 0, misses 4, evictions 0
+  on measured 8 5/10 q9 v1: ok, 100 tuples, 9.994 s, hits 0, misses 100, evictions 0
+  on measured 8 6/10 q10 v1: ok, 92 tuples, 0.237 s, hits 89, misses 3, evictions 0
+  on measured 8 7/10 q14 v1: ok, 10 tuples, 0.094 s, hits 9, misses 1, evictions 0
+  on measured 8 8/10 q19 v1: ok, 1 tuples, 0.037 s, hits 1, misses 0, evictions 0
+  on measured 8 9/10 q12 v1: ok, 2 tuples, 1.152 s, hits 1464, misses 2, evictions 0
+  on measured 8 10/10 q4 v1: ok, 5 tuples, 15.387 s, hits 621, misses 5, evictions 0
+
+== mode on: round 9 of 10
+  on measured 9 1/10 q3 v1: ok, 100 tuples, 0.317 s, hits 94, misses 6, evictions 0
+  on measured 9 2/10 q5 v1: ok, 5 tuples, 0.810 s, hits 0, misses 5, evictions 0
+  on measured 9 3/10 q6 v1: ok, 1 tuples, 0.098 s, hits 0, misses 1, evictions 0
+  on measured 9 4/10 q7 v1: ok, 4 tuples, 86.198 s, hits 0, misses 4, evictions 0
+  on measured 9 5/10 q9 v1: ok, 100 tuples, 12.261 s, hits 0, misses 100, evictions 0
+  on measured 9 6/10 q10 v1: ok, 92 tuples, 0.292 s, hits 89, misses 3, evictions 0
+  on measured 9 7/10 q14 v1: ok, 10 tuples, 0.139 s, hits 9, misses 1, evictions 0
+  on measured 9 8/10 q19 v1: ok, 1 tuples, 0.040 s, hits 1, misses 0, evictions 0
+  on measured 9 9/10 q12 v1: ok, 2 tuples, 1.183 s, hits 1464, misses 2, evictions 0
+  on measured 9 10/10 q4 v1: ok, 5 tuples, 15.656 s, hits 621, misses 5, evictions 0
+
+== mode on: round 10 of 10
+  on measured 10 1/10 q3 v1: ok, 100 tuples, 0.601 s, hits 94, misses 6, evictions 0
+  on measured 10 2/10 q5 v1: ok, 5 tuples, 0.957 s, hits 0, misses 5, evictions 0
+  on measured 10 3/10 q6 v1: ok, 1 tuples, 0.113 s, hits 0, misses 1, evictions 0
+  on measured 10 4/10 q7 v1: ok, 4 tuples, 86.159 s, hits 0, misses 4, evictions 0
+  on measured 10 5/10 q9 v1: ok, 100 tuples, 12.194 s, hits 0, misses 100, evictions 0
+  on measured 10 6/10 q10 v1: ok, 92 tuples, 0.186 s, hits 89, misses 3, evictions 0
+  on measured 10 7/10 q14 v1: ok, 10 tuples, 0.136 s, hits 9, misses 1, evictions 0
+  on measured 10 8/10 q19 v1: ok, 1 tuples, 0.041 s, hits 1, misses 0, evictions 0
+  on measured 10 9/10 q12 v1: ok, 2 tuples, 1.090 s, hits 1464, misses 2, evictions 0
+  on measured 10 10/10 q4 v1: ok, 5 tuples, 15.513 s, hits 621, misses 5, evictions 0
+
+== mode off: warm-up
+  off warmup 0 1/10 q3 v1: ok, 100 tuples, 7.503 s, hits 0, misses 0, evictions 0
+  off warmup 0 2/10 q5 v1: ok, 5 tuples, 0.884 s, hits 0, misses 0, evictions 0
+  off warmup 0 3/10 q6 v1: ok, 1 tuples, 0.100 s, hits 0, misses 0, evictions 0
+  off warmup 0 4/10 q7 v1: ok, 4 tuples, 85.056 s, hits 0, misses 0, evictions 0
+  off warmup 0 5/10 q9 v1: ok, 100 tuples, 11.728 s, hits 0, misses 0, evictions 0
+  off warmup 0 6/10 q10 v1: ok, 92 tuples, 7.159 s, hits 0, misses 0, evictions 0
+  off warmup 0 7/10 q14 v1: ok, 10 tuples, 0.650 s, hits 0, misses 0, evictions 0
+  off warmup 0 8/10 q19 v1: ok, 1 tuples, 0.121 s, hits 0, misses 0, evictions 0
+  off warmup 0 9/10 q12 v1: ok, 2 tuples, 4.314 s, hits 0, misses 0, evictions 0
+  off warmup 0 10/10 q4 v1: ok, 5 tuples, 21.585 s, hits 0, misses 0, evictions 0
+
+== mode off: round 1 of 10
+  off measured 1 1/11 q3 v1: ok, 100 tuples, 7.554 s, hits 0, misses 0, evictions 0
+  off measured 1 2/11 q5 v1: ok, 5 tuples, 0.809 s, hits 0, misses 0, evictions 0
+  off measured 1 3/11 q6 v1: ok, 1 tuples, 0.114 s, hits 0, misses 0, evictions 0
+  off measured 1 4/11 q7 v1: ok, 4 tuples, 84.863 s, hits 0, misses 0, evictions 0
+  off measured 1 5/11 q9 v1: ok, 100 tuples, 11.413 s, hits 0, misses 0, evictions 0
+  off measured 1 6/11 q10 v1: ok, 92 tuples, 8.206 s, hits 0, misses 0, evictions 0
+  off measured 1 7/11 q14 v1: ok, 10 tuples, 0.931 s, hits 0, misses 0, evictions 0
+  off measured 1 8/11 q19 v1: ok, 1 tuples, 0.111 s, hits 0, misses 0, evictions 0
+  off measured 1 9/11 q12 v1: ok, 2 tuples, 4.362 s, hits 0, misses 0, evictions 0
+  off measured 1 10/11 q4 v1: ok, 5 tuples, 21.642 s, hits 0, misses 0, evictions 0
+  off measured 1 11/11 q1 v1: timeout, 0 tuples, 300.123 s, hits 0, misses 0, evictions 0
+
+== mode off: round 2 of 10
+  off measured 2 1/10 q3 v1: ok, 100 tuples, 4.196 s, hits 0, misses 0, evictions 0
+  off measured 2 2/10 q5 v1: ok, 5 tuples, 1.197 s, hits 0, misses 0, evictions 0
+  off measured 2 3/10 q6 v1: ok, 1 tuples, 0.671 s, hits 0, misses 0, evictions 0
+  off measured 2 4/10 q7 v1: ok, 4 tuples, 89.599 s, hits 0, misses 0, evictions 0
+  off measured 2 5/10 q9 v1: ok, 100 tuples, 10.296 s, hits 0, misses 0, evictions 0
+  off measured 2 6/10 q10 v1: ok, 92 tuples, 4.540 s, hits 0, misses 0, evictions 0
+  off measured 2 7/10 q14 v1: ok, 10 tuples, 0.513 s, hits 0, misses 0, evictions 0
+  off measured 2 8/10 q19 v1: ok, 1 tuples, 0.097 s, hits 0, misses 0, evictions 0
+  off measured 2 9/10 q12 v1: ok, 2 tuples, 4.471 s, hits 0, misses 0, evictions 0
+  off measured 2 10/10 q4 v1: ok, 5 tuples, 22.322 s, hits 0, misses 0, evictions 0
+
+== mode off: round 3 of 10
+  off measured 3 1/10 q3 v1: ok, 100 tuples, 4.890 s, hits 0, misses 0, evictions 0
+  off measured 3 2/10 q5 v1: ok, 5 tuples, 0.822 s, hits 0, misses 0, evictions 0
+  off measured 3 3/10 q6 v1: ok, 1 tuples, 0.084 s, hits 0, misses 0, evictions 0
+  off measured 3 4/10 q7 v1: ok, 4 tuples, 86.998 s, hits 0, misses 0, evictions 0
+  off measured 3 5/10 q9 v1: ok, 100 tuples, 9.636 s, hits 0, misses 0, evictions 0
+  off measured 3 6/10 q10 v1: ok, 92 tuples, 4.356 s, hits 0, misses 0, evictions 0
+  off measured 3 7/10 q14 v1: ok, 10 tuples, 0.517 s, hits 0, misses 0, evictions 0
+  off measured 3 8/10 q19 v1: ok, 1 tuples, 0.085 s, hits 0, misses 0, evictions 0
+  off measured 3 9/10 q12 v1: ok, 2 tuples, 4.324 s, hits 0, misses 0, evictions 0
+  off measured 3 10/10 q4 v1: ok, 5 tuples, 21.545 s, hits 0, misses 0, evictions 0
+
+== mode off: round 4 of 10
+  off measured 4 1/10 q3 v1: ok, 100 tuples, 5.087 s, hits 0, misses 0, evictions 0
+  off measured 4 2/10 q5 v1: ok, 5 tuples, 0.734 s, hits 0, misses 0, evictions 0
+  off measured 4 3/10 q6 v1: ok, 1 tuples, 0.102 s, hits 0, misses 0, evictions 0
+  off measured 4 4/10 q7 v1: ok, 4 tuples, 85.711 s, hits 0, misses 0, evictions 0
+  off measured 4 5/10 q9 v1: ok, 100 tuples, 9.680 s, hits 0, misses 0, evictions 0
+  off measured 4 6/10 q10 v1: ok, 92 tuples, 4.536 s, hits 0, misses 0, evictions 0
+  off measured 4 7/10 q14 v1: ok, 10 tuples, 0.537 s, hits 0, misses 0, evictions 0
+  off measured 4 8/10 q19 v1: ok, 1 tuples, 0.101 s, hits 0, misses 0, evictions 0
+  off measured 4 9/10 q12 v1: ok, 2 tuples, 4.344 s, hits 0, misses 0, evictions 0
+  off measured 4 10/10 q4 v1: ok, 5 tuples, 21.496 s, hits 0, misses 0, evictions 0
+
+== mode off: round 5 of 10
+  off measured 5 1/10 q3 v1: ok, 100 tuples, 4.813 s, hits 0, misses 0, evictions 0
+  off measured 5 2/10 q5 v1: ok, 5 tuples, 0.727 s, hits 0, misses 0, evictions 0
+  off measured 5 3/10 q6 v1: ok, 1 tuples, 0.100 s, hits 0, misses 0, evictions 0
+  off measured 5 4/10 q7 v1: ok, 4 tuples, 85.712 s, hits 0, misses 0, evictions 0
+  off measured 5 5/10 q9 v1: ok, 100 tuples, 12.038 s, hits 0, misses 0, evictions 0
+  off measured 5 6/10 q10 v1: ok, 92 tuples, 7.470 s, hits 0, misses 0, evictions 0
+  off measured 5 7/10 q14 v1: ok, 10 tuples, 0.999 s, hits 0, misses 0, evictions 0
+  off measured 5 8/10 q19 v1: ok, 1 tuples, 0.157 s, hits 0, misses 0, evictions 0
+  off measured 5 9/10 q12 v1: ok, 2 tuples, 4.348 s, hits 0, misses 0, evictions 0
+  off measured 5 10/10 q4 v1: ok, 5 tuples, 21.617 s, hits 0, misses 0, evictions 0
+
+== mode off: round 6 of 10
+  off measured 6 1/10 q3 v1: ok, 100 tuples, 7.936 s, hits 0, misses 0, evictions 0
+  off measured 6 2/10 q5 v1: ok, 5 tuples, 0.831 s, hits 0, misses 0, evictions 0
+  off measured 6 3/10 q6 v1: ok, 1 tuples, 0.143 s, hits 0, misses 0, evictions 0
+  off measured 6 4/10 q7 v1: ok, 4 tuples, 85.559 s, hits 0, misses 0, evictions 0
+  off measured 6 5/10 q9 v1: ok, 100 tuples, 11.621 s, hits 0, misses 0, evictions 0
+  off measured 6 6/10 q10 v1: ok, 92 tuples, 7.756 s, hits 0, misses 0, evictions 0
+  off measured 6 7/10 q14 v1: ok, 10 tuples, 0.853 s, hits 0, misses 0, evictions 0
+  off measured 6 8/10 q19 v1: ok, 1 tuples, 0.117 s, hits 0, misses 0, evictions 0
+  off measured 6 9/10 q12 v1: ok, 2 tuples, 4.376 s, hits 0, misses 0, evictions 0
+  off measured 6 10/10 q4 v1: ok, 5 tuples, 21.688 s, hits 0, misses 0, evictions 0
+
+== mode off: round 7 of 10
+  off measured 7 1/10 q3 v1: ok, 100 tuples, 8.860 s, hits 0, misses 0, evictions 0
+  off measured 7 2/10 q5 v1: ok, 5 tuples, 0.805 s, hits 0, misses 0, evictions 0
+  off measured 7 3/10 q6 v1: ok, 1 tuples, 0.109 s, hits 0, misses 0, evictions 0
+  off measured 7 4/10 q7 v1: ok, 4 tuples, 85.276 s, hits 0, misses 0, evictions 0
+  off measured 7 5/10 q9 v1: ok, 100 tuples, 11.703 s, hits 0, misses 0, evictions 0
+  off measured 7 6/10 q10 v1: ok, 92 tuples, 7.451 s, hits 0, misses 0, evictions 0
+  off measured 7 7/10 q14 v1: ok, 10 tuples, 0.927 s, hits 0, misses 0, evictions 0
+  off measured 7 8/10 q19 v1: ok, 1 tuples, 0.082 s, hits 0, misses 0, evictions 0
+  off measured 7 9/10 q12 v1: ok, 2 tuples, 4.418 s, hits 0, misses 0, evictions 0
+  off measured 7 10/10 q4 v1: ok, 5 tuples, 21.512 s, hits 0, misses 0, evictions 0
+
+== mode off: round 8 of 10
+  off measured 8 1/10 q3 v1: ok, 100 tuples, 8.172 s, hits 0, misses 0, evictions 0
+  off measured 8 2/10 q5 v1: ok, 5 tuples, 0.919 s, hits 0, misses 0, evictions 0
+  off measured 8 3/10 q6 v1: ok, 1 tuples, 0.140 s, hits 0, misses 0, evictions 0
+  off measured 8 4/10 q7 v1: ok, 4 tuples, 89.246 s, hits 0, misses 0, evictions 0
+  off measured 8 5/10 q9 v1: ok, 100 tuples, 13.246 s, hits 0, misses 0, evictions 0
+  off measured 8 6/10 q10 v1: ok, 92 tuples, 8.676 s, hits 0, misses 0, evictions 0
+  off measured 8 7/10 q14 v1: ok, 10 tuples, 0.880 s, hits 0, misses 0, evictions 0
+  off measured 8 8/10 q19 v1: ok, 1 tuples, 0.076 s, hits 0, misses 0, evictions 0
+  off measured 8 9/10 q12 v1: ok, 2 tuples, 4.504 s, hits 0, misses 0, evictions 0
+  off measured 8 10/10 q4 v1: ok, 5 tuples, 21.756 s, hits 0, misses 0, evictions 0
+
+== mode off: round 9 of 10
+  off measured 9 1/10 q3 v1: ok, 100 tuples, 8.904 s, hits 0, misses 0, evictions 0
+  off measured 9 2/10 q5 v1: ok, 5 tuples, 0.798 s, hits 0, misses 0, evictions 0
+  off measured 9 3/10 q6 v1: ok, 1 tuples, 0.115 s, hits 0, misses 0, evictions 0
+  off measured 9 4/10 q7 v1: ok, 4 tuples, 87.449 s, hits 0, misses 0, evictions 0
+  off measured 9 5/10 q9 v1: ok, 100 tuples, 13.362 s, hits 0, misses 0, evictions 0
+  off measured 9 6/10 q10 v1: ok, 92 tuples, 8.280 s, hits 0, misses 0, evictions 0
+  off measured 9 7/10 q14 v1: ok, 10 tuples, 0.915 s, hits 0, misses 0, evictions 0
+  off measured 9 8/10 q19 v1: ok, 1 tuples, 0.144 s, hits 0, misses 0, evictions 0
+  off measured 9 9/10 q12 v1: ok, 2 tuples, 4.360 s, hits 0, misses 0, evictions 0
+  off measured 9 10/10 q4 v1: ok, 5 tuples, 21.691 s, hits 0, misses 0, evictions 0
+
+== mode off: round 10 of 10
+  off measured 10 1/10 q3 v1: ok, 100 tuples, 8.396 s, hits 0, misses 0, evictions 0
+  off measured 10 2/10 q5 v1: ok, 5 tuples, 1.002 s, hits 0, misses 0, evictions 0
+  off measured 10 3/10 q6 v1: ok, 1 tuples, 0.106 s, hits 0, misses 0, evictions 0
+  off measured 10 4/10 q7 v1: ok, 4 tuples, 85.792 s, hits 0, misses 0, evictions 0
+  off measured 10 5/10 q9 v1: ok, 100 tuples, 12.131 s, hits 0, misses 0, evictions 0
+  off measured 10 6/10 q10 v1: ok, 92 tuples, 7.974 s, hits 0, misses 0, evictions 0
+  off measured 10 7/10 q14 v1: ok, 10 tuples, 0.866 s, hits 0, misses 0, evictions 0
+  off measured 10 8/10 q19 v1: ok, 1 tuples, 0.081 s, hits 0, misses 0, evictions 0
+  off measured 10 9/10 q12 v1: ok, 2 tuples, 4.377 s, hits 0, misses 0, evictions 0
+  off measured 10 10/10 q4 v1: ok, 5 tuples, 21.427 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: warm-up
+  cachefold warmup 0 1/11 q3 v1: ok, 100 tuples, 0.562 s, hits 41, misses 5, evictions 0
+  cachefold warmup 0 2/11 q5 v1: ok, 5 tuples, 0.931 s, hits 0, misses 5, evictions 0
+  cachefold warmup 0 3/11 q6 v1: ok, 1 tuples, 0.054 s, hits 0, misses 0, evictions 0
+  cachefold warmup 0 4/11 q7 v1: ok, 4 tuples, 86.750 s, hits 0, misses 4, evictions 0
+  cachefold warmup 0 5/11 q9 v1: ok, 100 tuples, 11.981 s, hits 0, misses 100, evictions 0
+  cachefold warmup 0 6/11 q10 v1: ok, 92 tuples, 0.215 s, hits 0, misses 2, evictions 0
+  cachefold warmup 0 7/11 q14 v1: ok, 10 tuples, 0.024 s, hits 0, misses 0, evictions 0
+  cachefold warmup 0 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  cachefold warmup 0 9/11 q12 v1: ok, 2 tuples, 0.166 s, hits 41, misses 1, evictions 0
+  cachefold warmup 0 10/11 q4 v1: ok, 5 tuples, 0.522 s, hits 1913, misses 5, evictions 0
+  cachefold warmup 0 11/11 q1 v1: ok, 4 tuples, 5.702 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 1 of 10
+  cachefold measured 1 1/11 q3 v1: ok, 100 tuples, 0.533 s, hits 41, misses 5, evictions 0
+  cachefold measured 1 2/11 q5 v1: ok, 5 tuples, 0.792 s, hits 0, misses 5, evictions 0
+  cachefold measured 1 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  cachefold measured 1 4/11 q7 v1: ok, 4 tuples, 87.189 s, hits 0, misses 4, evictions 0
+  cachefold measured 1 5/11 q9 v1: ok, 100 tuples, 12.757 s, hits 0, misses 100, evictions 0
+  cachefold measured 1 6/11 q10 v1: ok, 92 tuples, 0.253 s, hits 0, misses 2, evictions 0
+  cachefold measured 1 7/11 q14 v1: ok, 10 tuples, 0.036 s, hits 0, misses 0, evictions 0
+  cachefold measured 1 8/11 q19 v1: ok, 1 tuples, 0.042 s, hits 0, misses 0, evictions 0
+  cachefold measured 1 9/11 q12 v1: ok, 2 tuples, 0.177 s, hits 41, misses 1, evictions 0
+  cachefold measured 1 10/11 q4 v1: ok, 5 tuples, 0.575 s, hits 1913, misses 5, evictions 0
+  cachefold measured 1 11/11 q1 v1: ok, 4 tuples, 5.706 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 2 of 10
+  cachefold measured 2 1/11 q3 v1: ok, 100 tuples, 0.493 s, hits 41, misses 5, evictions 0
+  cachefold measured 2 2/11 q5 v1: ok, 5 tuples, 0.947 s, hits 0, misses 5, evictions 0
+  cachefold measured 2 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  cachefold measured 2 4/11 q7 v1: ok, 4 tuples, 87.366 s, hits 0, misses 4, evictions 0
+  cachefold measured 2 5/11 q9 v1: ok, 100 tuples, 12.547 s, hits 0, misses 100, evictions 0
+  cachefold measured 2 6/11 q10 v1: ok, 92 tuples, 0.198 s, hits 0, misses 2, evictions 0
+  cachefold measured 2 7/11 q14 v1: ok, 10 tuples, 0.029 s, hits 0, misses 0, evictions 0
+  cachefold measured 2 8/11 q19 v1: ok, 1 tuples, 0.039 s, hits 0, misses 0, evictions 0
+  cachefold measured 2 9/11 q12 v1: ok, 2 tuples, 0.185 s, hits 41, misses 1, evictions 0
+  cachefold measured 2 10/11 q4 v1: ok, 5 tuples, 0.512 s, hits 1913, misses 5, evictions 0
+  cachefold measured 2 11/11 q1 v1: ok, 4 tuples, 5.773 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 3 of 10
+  cachefold measured 3 1/11 q3 v1: ok, 100 tuples, 0.521 s, hits 41, misses 5, evictions 0
+  cachefold measured 3 2/11 q5 v1: ok, 5 tuples, 0.986 s, hits 0, misses 5, evictions 0
+  cachefold measured 3 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  cachefold measured 3 4/11 q7 v1: ok, 4 tuples, 87.249 s, hits 0, misses 4, evictions 0
+  cachefold measured 3 5/11 q9 v1: ok, 100 tuples, 11.860 s, hits 0, misses 100, evictions 0
+  cachefold measured 3 6/11 q10 v1: ok, 92 tuples, 0.222 s, hits 0, misses 2, evictions 0
+  cachefold measured 3 7/11 q14 v1: ok, 10 tuples, 0.031 s, hits 0, misses 0, evictions 0
+  cachefold measured 3 8/11 q19 v1: ok, 1 tuples, 0.040 s, hits 0, misses 0, evictions 0
+  cachefold measured 3 9/11 q12 v1: ok, 2 tuples, 0.142 s, hits 41, misses 1, evictions 0
+  cachefold measured 3 10/11 q4 v1: ok, 5 tuples, 0.507 s, hits 1913, misses 5, evictions 0
+  cachefold measured 3 11/11 q1 v1: ok, 4 tuples, 5.776 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 4 of 10
+  cachefold measured 4 1/11 q3 v1: ok, 100 tuples, 0.523 s, hits 41, misses 5, evictions 0
+  cachefold measured 4 2/11 q5 v1: ok, 5 tuples, 0.799 s, hits 0, misses 5, evictions 0
+  cachefold measured 4 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  cachefold measured 4 4/11 q7 v1: ok, 4 tuples, 87.264 s, hits 0, misses 4, evictions 0
+  cachefold measured 4 5/11 q9 v1: ok, 100 tuples, 12.509 s, hits 0, misses 100, evictions 0
+  cachefold measured 4 6/11 q10 v1: ok, 92 tuples, 0.183 s, hits 0, misses 2, evictions 0
+  cachefold measured 4 7/11 q14 v1: ok, 10 tuples, 0.030 s, hits 0, misses 0, evictions 0
+  cachefold measured 4 8/11 q19 v1: ok, 1 tuples, 0.039 s, hits 0, misses 0, evictions 0
+  cachefold measured 4 9/11 q12 v1: ok, 2 tuples, 0.125 s, hits 41, misses 1, evictions 0
+  cachefold measured 4 10/11 q4 v1: ok, 5 tuples, 0.592 s, hits 1913, misses 5, evictions 0
+  cachefold measured 4 11/11 q1 v1: ok, 4 tuples, 5.750 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 5 of 10
+  cachefold measured 5 1/11 q3 v1: ok, 100 tuples, 0.378 s, hits 41, misses 5, evictions 0
+  cachefold measured 5 2/11 q5 v1: ok, 5 tuples, 0.809 s, hits 0, misses 5, evictions 0
+  cachefold measured 5 3/11 q6 v1: ok, 1 tuples, 0.049 s, hits 0, misses 0, evictions 0
+  cachefold measured 5 4/11 q7 v1: ok, 4 tuples, 85.829 s, hits 0, misses 4, evictions 0
+  cachefold measured 5 5/11 q9 v1: ok, 100 tuples, 12.367 s, hits 0, misses 100, evictions 0
+  cachefold measured 5 6/11 q10 v1: ok, 92 tuples, 0.224 s, hits 0, misses 2, evictions 0
+  cachefold measured 5 7/11 q14 v1: ok, 10 tuples, 0.027 s, hits 0, misses 0, evictions 0
+  cachefold measured 5 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  cachefold measured 5 9/11 q12 v1: ok, 2 tuples, 0.180 s, hits 41, misses 1, evictions 0
+  cachefold measured 5 10/11 q4 v1: ok, 5 tuples, 0.534 s, hits 1913, misses 5, evictions 0
+  cachefold measured 5 11/11 q1 v1: ok, 4 tuples, 5.753 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 6 of 10
+  cachefold measured 6 1/11 q3 v1: ok, 100 tuples, 0.446 s, hits 41, misses 5, evictions 0
+  cachefold measured 6 2/11 q5 v1: ok, 5 tuples, 0.934 s, hits 0, misses 5, evictions 0
+  cachefold measured 6 3/11 q6 v1: ok, 1 tuples, 0.049 s, hits 0, misses 0, evictions 0
+  cachefold measured 6 4/11 q7 v1: ok, 4 tuples, 86.225 s, hits 0, misses 4, evictions 0
+  cachefold measured 6 5/11 q9 v1: ok, 100 tuples, 12.309 s, hits 0, misses 100, evictions 0
+  cachefold measured 6 6/11 q10 v1: ok, 92 tuples, 0.159 s, hits 0, misses 2, evictions 0
+  cachefold measured 6 7/11 q14 v1: ok, 10 tuples, 0.023 s, hits 0, misses 0, evictions 0
+  cachefold measured 6 8/11 q19 v1: ok, 1 tuples, 0.037 s, hits 0, misses 0, evictions 0
+  cachefold measured 6 9/11 q12 v1: ok, 2 tuples, 0.134 s, hits 41, misses 1, evictions 0
+  cachefold measured 6 10/11 q4 v1: ok, 5 tuples, 0.409 s, hits 1913, misses 5, evictions 0
+  cachefold measured 6 11/11 q1 v1: ok, 4 tuples, 5.739 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 7 of 10
+  cachefold measured 7 1/11 q3 v1: ok, 100 tuples, 0.555 s, hits 41, misses 5, evictions 0
+  cachefold measured 7 2/11 q5 v1: ok, 5 tuples, 0.920 s, hits 0, misses 5, evictions 0
+  cachefold measured 7 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  cachefold measured 7 4/11 q7 v1: ok, 4 tuples, 86.845 s, hits 0, misses 4, evictions 0
+  cachefold measured 7 5/11 q9 v1: ok, 100 tuples, 12.436 s, hits 0, misses 100, evictions 0
+  cachefold measured 7 6/11 q10 v1: ok, 92 tuples, 0.235 s, hits 0, misses 2, evictions 0
+  cachefold measured 7 7/11 q14 v1: ok, 10 tuples, 0.028 s, hits 0, misses 0, evictions 0
+  cachefold measured 7 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  cachefold measured 7 9/11 q12 v1: ok, 2 tuples, 0.185 s, hits 41, misses 1, evictions 0
+  cachefold measured 7 10/11 q4 v1: ok, 5 tuples, 0.621 s, hits 1913, misses 5, evictions 0
+  cachefold measured 7 11/11 q1 v1: ok, 4 tuples, 5.778 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 8 of 10
+  cachefold measured 8 1/11 q3 v1: ok, 100 tuples, 0.533 s, hits 41, misses 5, evictions 0
+  cachefold measured 8 2/11 q5 v1: ok, 5 tuples, 0.832 s, hits 0, misses 5, evictions 0
+  cachefold measured 8 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  cachefold measured 8 4/11 q7 v1: ok, 4 tuples, 86.050 s, hits 0, misses 4, evictions 0
+  cachefold measured 8 5/11 q9 v1: ok, 100 tuples, 12.300 s, hits 0, misses 100, evictions 0
+  cachefold measured 8 6/11 q10 v1: ok, 92 tuples, 0.227 s, hits 0, misses 2, evictions 0
+  cachefold measured 8 7/11 q14 v1: ok, 10 tuples, 0.028 s, hits 0, misses 0, evictions 0
+  cachefold measured 8 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  cachefold measured 8 9/11 q12 v1: ok, 2 tuples, 0.164 s, hits 41, misses 1, evictions 0
+  cachefold measured 8 10/11 q4 v1: ok, 5 tuples, 0.665 s, hits 1913, misses 5, evictions 0
+  cachefold measured 8 11/11 q1 v1: ok, 4 tuples, 5.803 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 9 of 10
+  cachefold measured 9 1/11 q3 v1: ok, 100 tuples, 0.509 s, hits 41, misses 5, evictions 0
+  cachefold measured 9 2/11 q5 v1: ok, 5 tuples, 1.049 s, hits 0, misses 5, evictions 0
+  cachefold measured 9 3/11 q6 v1: ok, 1 tuples, 0.051 s, hits 0, misses 0, evictions 0
+  cachefold measured 9 4/11 q7 v1: ok, 4 tuples, 86.346 s, hits 0, misses 4, evictions 0
+  cachefold measured 9 5/11 q9 v1: ok, 100 tuples, 12.325 s, hits 0, misses 100, evictions 0
+  cachefold measured 9 6/11 q10 v1: ok, 92 tuples, 0.243 s, hits 0, misses 2, evictions 0
+  cachefold measured 9 7/11 q14 v1: ok, 10 tuples, 0.028 s, hits 0, misses 0, evictions 0
+  cachefold measured 9 8/11 q19 v1: ok, 1 tuples, 0.040 s, hits 0, misses 0, evictions 0
+  cachefold measured 9 9/11 q12 v1: ok, 2 tuples, 0.132 s, hits 41, misses 1, evictions 0
+  cachefold measured 9 10/11 q4 v1: ok, 5 tuples, 0.468 s, hits 1913, misses 5, evictions 0
+  cachefold measured 9 11/11 q1 v1: ok, 4 tuples, 5.762 s, hits 0, misses 0, evictions 0
+
+== mode cachefold: round 10 of 10
+  cachefold measured 10 1/11 q3 v1: ok, 100 tuples, 0.477 s, hits 41, misses 5, evictions 0
+  cachefold measured 10 2/11 q5 v1: ok, 5 tuples, 0.895 s, hits 0, misses 5, evictions 0
+  cachefold measured 10 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  cachefold measured 10 4/11 q7 v1: ok, 4 tuples, 87.569 s, hits 0, misses 4, evictions 0
+  cachefold measured 10 5/11 q9 v1: ok, 100 tuples, 12.031 s, hits 0, misses 100, evictions 0
+  cachefold measured 10 6/11 q10 v1: ok, 92 tuples, 0.191 s, hits 0, misses 2, evictions 0
+  cachefold measured 10 7/11 q14 v1: ok, 10 tuples, 0.023 s, hits 0, misses 0, evictions 0
+  cachefold measured 10 8/11 q19 v1: ok, 1 tuples, 0.037 s, hits 0, misses 0, evictions 0
+  cachefold measured 10 9/11 q12 v1: ok, 2 tuples, 0.116 s, hits 41, misses 1, evictions 0
+  cachefold measured 10 10/11 q4 v1: ok, 5 tuples, 0.441 s, hits 1913, misses 5, evictions 0
+  cachefold measured 10 11/11 q1 v1: ok, 4 tuples, 5.689 s, hits 0, misses 0, evictions 0
+
+== mode fold: warm-up
+  fold warmup 0 1/11 q3 v1: ok, 100 tuples, 3.141 s, hits 0, misses 0, evictions 0
+  fold warmup 0 2/11 q5 v1: ok, 5 tuples, 0.869 s, hits 0, misses 0, evictions 0
+  fold warmup 0 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  fold warmup 0 4/11 q7 v1: ok, 4 tuples, 86.545 s, hits 0, misses 0, evictions 0
+  fold warmup 0 5/11 q9 v1: ok, 100 tuples, 11.457 s, hits 0, misses 0, evictions 0
+  fold warmup 0 6/11 q10 v1: ok, 92 tuples, 0.187 s, hits 0, misses 0, evictions 0
+  fold warmup 0 7/11 q14 v1: ok, 10 tuples, 0.029 s, hits 0, misses 0, evictions 0
+  fold warmup 0 8/11 q19 v1: ok, 1 tuples, 0.039 s, hits 0, misses 0, evictions 0
+  fold warmup 0 9/11 q12 v1: ok, 2 tuples, 3.589 s, hits 0, misses 0, evictions 0
+  fold warmup 0 10/11 q4 v1: ok, 5 tuples, 161.381 s, hits 0, misses 0, evictions 0
+  fold warmup 0 11/11 q1 v1: ok, 4 tuples, 6.610 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 1 of 10
+  fold measured 1 1/11 q3 v1: ok, 100 tuples, 3.086 s, hits 0, misses 0, evictions 0
+  fold measured 1 2/11 q5 v1: ok, 5 tuples, 0.973 s, hits 0, misses 0, evictions 0
+  fold measured 1 3/11 q6 v1: ok, 1 tuples, 0.056 s, hits 0, misses 0, evictions 0
+  fold measured 1 4/11 q7 v1: ok, 4 tuples, 85.762 s, hits 0, misses 0, evictions 0
+  fold measured 1 5/11 q9 v1: ok, 100 tuples, 11.830 s, hits 0, misses 0, evictions 0
+  fold measured 1 6/11 q10 v1: ok, 92 tuples, 0.158 s, hits 0, misses 0, evictions 0
+  fold measured 1 7/11 q14 v1: ok, 10 tuples, 0.025 s, hits 0, misses 0, evictions 0
+  fold measured 1 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  fold measured 1 9/11 q12 v1: ok, 2 tuples, 4.195 s, hits 0, misses 0, evictions 0
+  fold measured 1 10/11 q4 v1: ok, 5 tuples, 173.145 s, hits 0, misses 0, evictions 0
+  fold measured 1 11/11 q1 v1: ok, 4 tuples, 5.803 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 2 of 10
+  fold measured 2 1/11 q3 v1: ok, 100 tuples, 3.884 s, hits 0, misses 0, evictions 0
+  fold measured 2 2/11 q5 v1: ok, 5 tuples, 0.952 s, hits 0, misses 0, evictions 0
+  fold measured 2 3/11 q6 v1: ok, 1 tuples, 0.049 s, hits 0, misses 0, evictions 0
+  fold measured 2 4/11 q7 v1: ok, 4 tuples, 86.777 s, hits 0, misses 0, evictions 0
+  fold measured 2 5/11 q9 v1: ok, 100 tuples, 13.168 s, hits 0, misses 0, evictions 0
+  fold measured 2 6/11 q10 v1: ok, 92 tuples, 0.163 s, hits 0, misses 0, evictions 0
+  fold measured 2 7/11 q14 v1: ok, 10 tuples, 0.024 s, hits 0, misses 0, evictions 0
+  fold measured 2 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  fold measured 2 9/11 q12 v1: ok, 2 tuples, 3.855 s, hits 0, misses 0, evictions 0
+  fold measured 2 10/11 q4 v1: ok, 5 tuples, 156.094 s, hits 0, misses 0, evictions 0
+  fold measured 2 11/11 q1 v1: ok, 4 tuples, 5.713 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 3 of 10
+  fold measured 3 1/11 q3 v1: ok, 100 tuples, 3.683 s, hits 0, misses 0, evictions 0
+  fold measured 3 2/11 q5 v1: ok, 5 tuples, 0.786 s, hits 0, misses 0, evictions 0
+  fold measured 3 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  fold measured 3 4/11 q7 v1: ok, 4 tuples, 85.675 s, hits 0, misses 0, evictions 0
+  fold measured 3 5/11 q9 v1: ok, 100 tuples, 11.815 s, hits 0, misses 0, evictions 0
+  fold measured 3 6/11 q10 v1: ok, 92 tuples, 0.233 s, hits 0, misses 0, evictions 0
+  fold measured 3 7/11 q14 v1: ok, 10 tuples, 0.034 s, hits 0, misses 0, evictions 0
+  fold measured 3 8/11 q19 v1: ok, 1 tuples, 0.041 s, hits 0, misses 0, evictions 0
+  fold measured 3 9/11 q12 v1: ok, 2 tuples, 3.684 s, hits 0, misses 0, evictions 0
+  fold measured 3 10/11 q4 v1: ok, 5 tuples, 163.331 s, hits 0, misses 0, evictions 0
+  fold measured 3 11/11 q1 v1: ok, 4 tuples, 5.785 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 4 of 10
+  fold measured 4 1/11 q3 v1: ok, 100 tuples, 3.867 s, hits 0, misses 0, evictions 0
+  fold measured 4 2/11 q5 v1: ok, 5 tuples, 0.831 s, hits 0, misses 0, evictions 0
+  fold measured 4 3/11 q6 v1: ok, 1 tuples, 0.048 s, hits 0, misses 0, evictions 0
+  fold measured 4 4/11 q7 v1: ok, 4 tuples, 85.299 s, hits 0, misses 0, evictions 0
+  fold measured 4 5/11 q9 v1: ok, 100 tuples, 11.715 s, hits 0, misses 0, evictions 0
+  fold measured 4 6/11 q10 v1: ok, 92 tuples, 0.232 s, hits 0, misses 0, evictions 0
+  fold measured 4 7/11 q14 v1: ok, 10 tuples, 0.031 s, hits 0, misses 0, evictions 0
+  fold measured 4 8/11 q19 v1: ok, 1 tuples, 0.051 s, hits 0, misses 0, evictions 0
+  fold measured 4 9/11 q12 v1: ok, 2 tuples, 3.354 s, hits 0, misses 0, evictions 0
+  fold measured 4 10/11 q4 v1: ok, 5 tuples, 165.908 s, hits 0, misses 0, evictions 0
+  fold measured 4 11/11 q1 v1: ok, 4 tuples, 5.853 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 5 of 10
+  fold measured 5 1/11 q3 v1: ok, 100 tuples, 4.181 s, hits 0, misses 0, evictions 0
+  fold measured 5 2/11 q5 v1: ok, 5 tuples, 0.806 s, hits 0, misses 0, evictions 0
+  fold measured 5 3/11 q6 v1: ok, 1 tuples, 0.049 s, hits 0, misses 0, evictions 0
+  fold measured 5 4/11 q7 v1: ok, 4 tuples, 85.705 s, hits 0, misses 0, evictions 0
+  fold measured 5 5/11 q9 v1: ok, 100 tuples, 11.670 s, hits 0, misses 0, evictions 0
+  fold measured 5 6/11 q10 v1: ok, 92 tuples, 0.185 s, hits 0, misses 0, evictions 0
+  fold measured 5 7/11 q14 v1: ok, 10 tuples, 0.028 s, hits 0, misses 0, evictions 0
+  fold measured 5 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  fold measured 5 9/11 q12 v1: ok, 2 tuples, 3.808 s, hits 0, misses 0, evictions 0
+  fold measured 5 10/11 q4 v1: ok, 5 tuples, 160.223 s, hits 0, misses 0, evictions 0
+  fold measured 5 11/11 q1 v1: ok, 4 tuples, 5.724 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 6 of 10
+  fold measured 6 1/11 q3 v1: ok, 100 tuples, 3.825 s, hits 0, misses 0, evictions 0
+  fold measured 6 2/11 q5 v1: ok, 5 tuples, 0.764 s, hits 0, misses 0, evictions 0
+  fold measured 6 3/11 q6 v1: ok, 1 tuples, 0.049 s, hits 0, misses 0, evictions 0
+  fold measured 6 4/11 q7 v1: ok, 4 tuples, 84.711 s, hits 0, misses 0, evictions 0
+  fold measured 6 5/11 q9 v1: ok, 100 tuples, 11.957 s, hits 0, misses 0, evictions 0
+  fold measured 6 6/11 q10 v1: ok, 92 tuples, 0.189 s, hits 0, misses 0, evictions 0
+  fold measured 6 7/11 q14 v1: ok, 10 tuples, 0.022 s, hits 0, misses 0, evictions 0
+  fold measured 6 8/11 q19 v1: ok, 1 tuples, 0.037 s, hits 0, misses 0, evictions 0
+  fold measured 6 9/11 q12 v1: ok, 2 tuples, 3.752 s, hits 0, misses 0, evictions 0
+  fold measured 6 10/11 q4 v1: ok, 5 tuples, 170.126 s, hits 0, misses 0, evictions 0
+  fold measured 6 11/11 q1 v1: ok, 4 tuples, 5.781 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 7 of 10
+  fold measured 7 1/11 q3 v1: ok, 100 tuples, 3.981 s, hits 0, misses 0, evictions 0
+  fold measured 7 2/11 q5 v1: ok, 5 tuples, 0.811 s, hits 0, misses 0, evictions 0
+  fold measured 7 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  fold measured 7 4/11 q7 v1: ok, 4 tuples, 85.644 s, hits 0, misses 0, evictions 0
+  fold measured 7 5/11 q9 v1: ok, 100 tuples, 11.998 s, hits 0, misses 0, evictions 0
+  fold measured 7 6/11 q10 v1: ok, 92 tuples, 0.177 s, hits 0, misses 0, evictions 0
+  fold measured 7 7/11 q14 v1: ok, 10 tuples, 0.026 s, hits 0, misses 0, evictions 0
+  fold measured 7 8/11 q19 v1: ok, 1 tuples, 0.039 s, hits 0, misses 0, evictions 0
+  fold measured 7 9/11 q12 v1: ok, 2 tuples, 3.800 s, hits 0, misses 0, evictions 0
+  fold measured 7 10/11 q4 v1: ok, 5 tuples, 164.562 s, hits 0, misses 0, evictions 0
+  fold measured 7 11/11 q1 v1: ok, 4 tuples, 5.764 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 8 of 10
+  fold measured 8 1/11 q3 v1: ok, 100 tuples, 4.076 s, hits 0, misses 0, evictions 0
+  fold measured 8 2/11 q5 v1: ok, 5 tuples, 0.957 s, hits 0, misses 0, evictions 0
+  fold measured 8 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  fold measured 8 4/11 q7 v1: ok, 4 tuples, 87.530 s, hits 0, misses 0, evictions 0
+  fold measured 8 5/11 q9 v1: ok, 100 tuples, 12.001 s, hits 0, misses 0, evictions 0
+  fold measured 8 6/11 q10 v1: ok, 92 tuples, 0.255 s, hits 0, misses 0, evictions 0
+  fold measured 8 7/11 q14 v1: ok, 10 tuples, 0.032 s, hits 0, misses 0, evictions 0
+  fold measured 8 8/11 q19 v1: ok, 1 tuples, 0.041 s, hits 0, misses 0, evictions 0
+  fold measured 8 9/11 q12 v1: ok, 2 tuples, 3.684 s, hits 0, misses 0, evictions 0
+  fold measured 8 10/11 q4 v1: ok, 5 tuples, 163.324 s, hits 0, misses 0, evictions 0
+  fold measured 8 11/11 q1 v1: ok, 4 tuples, 5.782 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 9 of 10
+  fold measured 9 1/11 q3 v1: ok, 100 tuples, 4.151 s, hits 0, misses 0, evictions 0
+  fold measured 9 2/11 q5 v1: ok, 5 tuples, 0.862 s, hits 0, misses 0, evictions 0
+  fold measured 9 3/11 q6 v1: ok, 1 tuples, 0.047 s, hits 0, misses 0, evictions 0
+  fold measured 9 4/11 q7 v1: ok, 4 tuples, 85.754 s, hits 0, misses 0, evictions 0
+  fold measured 9 5/11 q9 v1: ok, 100 tuples, 12.171 s, hits 0, misses 0, evictions 0
+  fold measured 9 6/11 q10 v1: ok, 92 tuples, 0.204 s, hits 0, misses 0, evictions 0
+  fold measured 9 7/11 q14 v1: ok, 10 tuples, 0.029 s, hits 0, misses 0, evictions 0
+  fold measured 9 8/11 q19 v1: ok, 1 tuples, 0.038 s, hits 0, misses 0, evictions 0
+  fold measured 9 9/11 q12 v1: ok, 2 tuples, 3.829 s, hits 0, misses 0, evictions 0
+  fold measured 9 10/11 q4 v1: ok, 5 tuples, 166.980 s, hits 0, misses 0, evictions 0
+  fold measured 9 11/11 q1 v1: ok, 4 tuples, 5.686 s, hits 0, misses 0, evictions 0
+
+== mode fold: round 10 of 10
+  fold measured 10 1/11 q3 v1: ok, 100 tuples, 4.013 s, hits 0, misses 0, evictions 0
+  fold measured 10 2/11 q5 v1: ok, 5 tuples, 0.879 s, hits 0, misses 0, evictions 0
+  fold measured 10 3/11 q6 v1: ok, 1 tuples, 0.046 s, hits 0, misses 0, evictions 0
+  fold measured 10 4/11 q7 v1: ok, 4 tuples, 85.336 s, hits 0, misses 0, evictions 0
+  fold measured 10 5/11 q9 v1: ok, 100 tuples, 11.541 s, hits 0, misses 0, evictions 0
+  fold measured 10 6/11 q10 v1: ok, 92 tuples, 0.182 s, hits 0, misses 0, evictions 0
+  fold measured 10 7/11 q14 v1: ok, 10 tuples, 0.023 s, hits 0, misses 0, evictions 0
+  fold measured 10 8/11 q19 v1: ok, 1 tuples, 0.037 s, hits 0, misses 0, evictions 0
+  fold measured 10 9/11 q12 v1: ok, 2 tuples, 3.396 s, hits 0, misses 0, evictions 0
+  fold measured 10 10/11 q4 v1: ok, 5 tuples, 165.413 s, hits 0, misses 0, evictions 0
+  fold measured 10 11/11 q1 v1: ok, 4 tuples, 5.752 s, hits 0, misses 0, evictions 0
+
+wrote /Users/rjok/Documents/benchmark_suite/cache3/results/exp1.csv

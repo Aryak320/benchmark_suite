@@ -1,0 +1,113 @@
+{\setlength{\tabcolsep}{1pt}
+\begin{tabular}{cc}
+\begin{minipage}[c][7.25cm][s]{7.7cm}\centering
+\vspace{1mm}\vfill
+\begin{tikzpicture}[font=\scriptsize]
+\draw[black!18] (0.000,0) -- (0.000,5.200);
+\draw[black!18] (0,0.000) -- (5.200,0.000);
+\node[below, text=black!80] at (0.000,0) {0.01};
+\node[left, text=black!80] at (0,0.000) {0.01};
+\draw[black!18] (1.040,0) -- (1.040,5.200);
+\draw[black!18] (0,1.040) -- (5.200,1.040);
+\node[below, text=black!80] at (1.040,0) {0.1};
+\node[left, text=black!80] at (0,1.040) {0.1};
+\draw[black!18] (2.080,0) -- (2.080,5.200);
+\draw[black!18] (0,2.080) -- (5.200,2.080);
+\node[below, text=black!80] at (2.080,0) {1};
+\node[left, text=black!80] at (0,2.080) {1};
+\draw[black!18] (3.120,0) -- (3.120,5.200);
+\draw[black!18] (0,3.120) -- (5.200,3.120);
+\node[below, text=black!80] at (3.120,0) {10};
+\node[left, text=black!80] at (0,3.120) {10};
+\draw[black!18] (4.160,0) -- (4.160,5.200);
+\draw[black!18] (0,4.160) -- (5.200,4.160);
+\node[below, text=black!80] at (4.160,0) {100};
+\node[left, text=black!80] at (0,4.160) {100};
+\draw[black!18] (5.200,0) -- (5.200,5.200);
+\draw[black!18] (0,5.200) -- (5.200,5.200);
+\node[below, text=black!80] at (5.200,0) {1000};
+\node[left, text=black!80] at (0,5.200) {1000};
+\draw[black!80] (0,0) rectangle (5.200,5.200);
+\draw[black!80, dashed] (0,0) -- (5.200,5.200);
+\filldraw[fill=isD, draw=white, line width=0.2pt] (4.656,2.972) -- (4.757,2.870) -- (4.656,2.769) -- (4.555,2.870) -- cycle;
+\node[left=0.5mm, inner sep=0.5pt] at (4.656,2.870) {\texttt{Q1}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (2.951,1.865) -- (3.052,1.764) -- (2.951,1.663) -- (2.850,1.764) -- cycle;
+\node[left=0.5mm, inner sep=0.5pt] at (2.951,1.764) {\texttt{Q3}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (3.469,1.897) -- (3.571,1.795) -- (3.469,1.694) -- (3.368,1.795) -- cycle;
+\node[above=0.5mm, inner sep=0.5pt] at (3.469,1.795) {\texttt{Q4}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (2.014,2.132) -- (2.115,2.031) -- (2.014,1.929) -- (1.913,2.031) -- cycle;
+\node[below right=0.5mm, inner sep=0.5pt] at (2.014,2.031) {\texttt{Q5}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (1.275,0.813) -- (1.377,0.711) -- (1.275,0.610) -- (1.174,0.711) -- cycle;
+\node[above=0.5mm, inner sep=0.5pt] at (1.275,0.711) {\texttt{Q6}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (4.095,4.197) -- (4.196,4.096) -- (4.095,3.995) -- (3.994,4.096) -- cycle;
+\node[right=0.5mm, inner sep=0.5pt] at (4.095,4.096) {\texttt{Q7}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (3.184,3.316) -- (3.285,3.215) -- (3.184,3.114) -- (3.082,3.215) -- cycle;
+\node[left=0.5mm, inner sep=0.5pt] at (3.184,3.215) {\texttt{Q9}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (2.954,1.484) -- (3.055,1.383) -- (2.954,1.281) -- (2.853,1.383) -- cycle;
+\node[right=0.5mm, inner sep=0.5pt] at (2.954,1.383) {\texttt{Q10}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (2.748,1.336) -- (2.849,1.235) -- (2.748,1.134) -- (2.647,1.235) -- cycle;
+\node[left=0.5mm, inner sep=0.5pt] at (2.748,1.235) {\texttt{Q12}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (1.976,0.571) -- (2.077,0.470) -- (1.976,0.369) -- (1.874,0.470) -- cycle;
+\node[right=0.5mm, inner sep=0.5pt] at (1.976,0.470) {\texttt{Q14}};
+\filldraw[fill=isD, draw=white, line width=0.2pt] (1.062,0.714) -- (1.164,0.612) -- (1.062,0.511) -- (0.961,0.612) -- cycle;
+\node[below=0.5mm, inner sep=0.5pt] at (1.062,0.612) {\texttt{Q19}};
+\node at (2.600,-0.62) {$t_{\text{off}}$ (s)};
+\node[rotate=90] at (-0.82,2.600) {$t_{\text{optimized}}$ (s)};
+\end{tikzpicture}
+\par\vfill{\small (a) running times in the off and optimized modes}\par\vspace{1.5mm}
+\end{minipage}
+&
+\begin{minipage}[c][7.25cm][s]{7.7cm}\centering
+\vspace{1mm}\vfill
+\begin{tikzpicture}[font=\scriptsize]
+\draw[black!18] (0.565,0) -- (0.565,4.817);
+\node[below, text=black!80] at (0.565,0) {1$\times$};
+\draw[black!18] (2.450,0) -- (2.450,4.817);
+\node[below, text=black!80] at (2.450,0) {10$\times$};
+\draw[black!18] (4.335,0) -- (4.335,4.817);
+\node[below, text=black!80] at (4.335,0) {100$\times$};
+\fill[isD!75] (0.565,4.456) rectangle (3.802,4.707);
+\node[left, text=black!80] at (0,4.582) {\texttt{Q1}};
+\node[right, text=black!80, inner sep=1.5pt] at (3.802,4.582) {52.1$\times$};
+\fill[isD!75] (0.565,4.063) rectangle (2.717,4.314);
+\node[left, text=black!80] at (0,4.188) {\texttt{Q3}};
+\node[right, text=black!80, inner sep=1.5pt] at (2.717,4.188) {13.9$\times$};
+\fill[isD!75] (0.565,3.669) rectangle (3.599,3.921);
+\node[left, text=black!80] at (0,3.795) {\texttt{Q4}};
+\node[right, text=black!80, inner sep=1.5pt] at (3.599,3.795) {40.7$\times$};
+\fill[isD!75] (0.536,3.276) rectangle (0.565,3.527);
+\node[left, text=black!80] at (0,3.402) {\texttt{Q5}};
+\node[right, text=black!80, inner sep=1.5pt] at (0.565,3.402) {0.96$\times$};
+\fill[isD!75] (0.565,2.883) rectangle (1.588,3.134);
+\node[left, text=black!80] at (0,3.008) {\texttt{Q6}};
+\node[right, text=black!80, inner sep=1.5pt] at (1.588,3.008) {3.5$\times$};
+\fill[isD!75] (0.564,2.490) rectangle (0.565,2.741);
+\node[left, text=black!80] at (0,2.615) {\texttt{Q7}};
+\node[right, text=black!80, inner sep=1.5pt] at (0.565,2.615) {1.00$\times$};
+\fill[isD!75] (0.508,2.096) rectangle (0.565,2.347);
+\node[left, text=black!80] at (0,2.222) {\texttt{Q9}};
+\node[right, text=black!80, inner sep=1.5pt] at (0.565,2.222) {0.93$\times$};
+\fill[isD!75] (0.565,1.703) rectangle (3.413,1.954);
+\node[left, text=black!80] at (0,1.829) {\texttt{Q10}};
+\node[right, text=black!80, inner sep=1.5pt] at (3.413,1.829) {32.4$\times$};
+\fill[isD!75] (0.565,1.310) rectangle (3.307,1.561);
+\node[left, text=black!80] at (0,1.435) {\texttt{Q12}};
+\node[right, text=black!80, inner sep=1.5pt] at (3.307,1.435) {28.5$\times$};
+\fill[isD!75] (0.565,0.917) rectangle (3.294,1.168);
+\node[left, text=black!80] at (0,1.042) {\texttt{Q14}};
+\node[right, text=black!80, inner sep=1.5pt] at (3.294,1.042) {28.0$\times$};
+\fill[isD!75] (0.565,0.523) rectangle (1.381,0.774);
+\node[left, text=black!80] at (0,0.649) {\texttt{Q19}};
+\node[right, text=black!80, inner sep=1.5pt] at (1.381,0.649) {2.7$\times$};
+\draw[black!80] (0,0.460) -- (4.900,0.460);
+\fill[isD!75] (0.565,0.130) rectangle (1.720,0.381);
+\node[left, text=black!80] at (0,0.256) {All 11};
+\node[right, text=black!80, inner sep=1.5pt] at (1.720,0.256) {4.1$\times$};
+\draw[black!80] (0.565,0) -- (0.565,4.817);
+\draw[black!80] (0,0) -- (4.900,0);
+\node at (2.450,-0.62) {speed-up: $t_{\text{off}}/t_{\text{optimized}}$};
+\end{tikzpicture}
+\par\vfill{\small (b) speed-up of the optimized mode}\par\vspace{1.5mm}
+\end{minipage}
+\\
+\end{tabular}}
