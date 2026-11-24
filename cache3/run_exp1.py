@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Experiment 1: variant 1 of the eleven queries, ten times in each of the four modes.
 
-The four modes run one after the other: cache only (on), unoptimized (off), optimized (cachefold) and folding only
+One provenance pass first runs each query with provenance() in place of the call to probability_evaluate.
+The four modes then run one after the other: cache only (on), unoptimized (off), optimized (cachefold) and folding only
 (fold). Each mode makes ten runs. A run executes all the queries once, in a database session of its own. The server
-restarts before each run, which empties the cache. No query is run as a warm-up; d4 is launched once on a two-variable
-formula before each run. A query that reaches the timeout is not run again in that mode.
+restarts before each run, which empties the cache, and d4 is launched once on a two-variable formula. A query that
+reaches the timeout is not run again in that mode.
 Every statement gives one row of the output CSV.
 """
 import argparse
@@ -35,6 +36,7 @@ def main(argv=None):
     modes = args.modes.split(",")
 
     if args.dry_run:
+        print(f"provenance pass: {len(queries)} statements")
         for mode in modes:
             print(f"mode {mode}: {args.runs} runs of {len(queries)} queries, a server restart before each")
         print("order:", " ".join(f"q{q}v{VARIANT}" for q in queries))
@@ -42,6 +44,14 @@ def main(argv=None):
 
     preflight(args.database, [(q, VARIANT) for q in queries])
     output = Output(args.out, args.force, environment(args.database, args.timeout, ""))
+    print(f"\n== provenance pass over {len(queries)} statements", flush=True)
+    experiment.restart_server()
+    session = open_session(args.database, "off", args.timeout)
+    for position, query in enumerate(queries, 1):
+        row = measure(session, query, VARIANT, provenance_only=True)
+        output.write(experiment="exp1", repetition=0, mode="provenance", phase="provenance", position=position, **row)
+        report("provenance", position, len(queries), row)
+    session.close()
     for mode in modes:
         reached = set()
         for number in range(1, args.runs + 1):
